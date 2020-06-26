@@ -16,12 +16,17 @@
 /* Music */
 
 .music-thumb {
+    display: block;
     height: 300px;
-    width: 300px;
+    width: 300px; /* add media query to make thumbnail 150px and padding bigger on each image for mobile devices */
+}
+
+.music-thumb a {
+    text-align: center;
 }
 
 /* Shop */
 
 /* Shows */
 
-/* Media */
+/* Media Queries */

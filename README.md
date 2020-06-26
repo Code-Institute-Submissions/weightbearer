@@ -11,17 +11,18 @@ In particular, as part of this section we recommend that you provide a list of U
 
 This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
 
-A .bmpr wireframe for this project is included in the repository, with desktop, tablet and mobile versions. EXPORT TO PDF ALSO.
+A wireframe for this project is included in the repository, with desktop, tablet and mobile versions in both .bmpr and .pdf formats.
 
 ## Features
 
 In this section, you should go over the different parts of your project, and describe each in a sentence or so.
 
-- index - The landing page includes a short biography of the band, as well as prominent links to music, a shop and a diary of live events, in line with the main user stories.
-- music - Contains links to each of the band's releases so far. I've included the album artwork for each as a thumbnail, which is inspired by the presentation style used by Spotify and Bandcamp, focusing primarily on individual songs.
-- shop - Contains the band's merchandise, namely their first record, a t-shirt and a sticker pack. These are currently in production so I created dummy images for these.
-- shows - 
-- contact
+- index - The landing page includes a short biography of the band, as well as prominent links to music, a shop and a diary of live events, in line with the main user stories;
+- music - Contains links to each of the band's releases so far. I've included the album artwork for each as a thumbnail, which is inspired by the presentation style used by Spotify and Bandcamp, focusing primarily on individual songs;
+- shop - Contains the band's merchandise, namely their first record, a t-shirt and a sticker pack. These are currently in production so I created dummy images for these;
+- shows - Contains a diary of upcoming shows, with a dummy link to Facebook events;
+- about us - A short history of the band, its members, their influences and instruments;
+- contact - A basic form that allows people to send a message to the band, as well as selecting the reason for enquiry.
 
 ### Existing Features
 - Feature 1 - allows users X to achieve Y, by having them fill out Z
