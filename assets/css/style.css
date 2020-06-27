@@ -1,13 +1,57 @@
-.index-box {
-    background-color: #aaaaaa;
-    border-radius: 5px;
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;700;800&display=swap');
+
+body {
+    font-family: "Merriweather Sans", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
 }
 
 /* Headings */
 
+.header {
+    background: url('.../assets/images/banners/banner-text-line.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    clear: both;
+    display: flex;
+    height: 25vh;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+
+.navbar {
+    height: 60px;
+}
+
+.navbar-brand img {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    width: 140px;
+}
+
+/* Containers */
+
+.nav-container {
+    left: 0; /* this needs to stay at the top on scrolling, and is taken from the CI Bootstrap module walkthrough */
+    padding-left: 0;
+    padding-right: 0;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
 /* Colours */
 
 /* Index */
+
+.index-box {
+    background-color: #aaaaaa;
+    border-radius: 5px;
 
 /* About */
 
@@ -17,12 +61,25 @@
 
 .music-thumb {
     display: block;
-    height: 300px;
-    width: 300px; /* add media query to make thumbnail 150px and padding bigger on each image for mobile devices */
+    height: 250px;
+    text-align: center;
+    width: 250px; /* add media query to make thumbnail 150px and padding bigger on each image for mobile devices */
 }
 
-.music-thumb a {
+.music-thumb img {
+    height: 200px;
+    weight: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    border-color: #4c4c4c;
+    border-width: 5px;
+}
+
+.song-heading {
     text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    color: #4c4c4c;
 }
 
 /* Shop */
