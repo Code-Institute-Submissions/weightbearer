@@ -18,22 +18,72 @@ body {
     height: 35vh;
 }
 
+.jumbotron {
+    margin-bottom: 0;
+}
+
 .navbar {
-    height: 60px;
     background-color: #f2f2f2;
+    height: 60px;
+    position: absolute;
 }
 
 .navbar-brand img {
-    height: 100%;
+    height: 100%; /* allows band logo to fill navbar */
     width: 140px;
 }
 
 .nav-link {
+    border-radius: 10px;
     color: #333333;
     font-weight: 500;
     font-size: 18px;
     letter-spacing: 3px;
     text-transform: uppercase;
+}
+
+.nav-link:hover { /* Taken from the CI Resume Walkthrough */
+    background-color: #333333;
+    color: #f2f2f2;
+    transition: all 0.15s ease;
+    -moz-transition: all 0.15s ease;
+    -webkit-transition: all 0.15s ease;
+    -o-transition: all 0.15s ease;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #333333;
+    color: #f2f2f2;
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding-top: 15px;
+}
+
+.credits {
+    font-size: 12px;
+    text-align: left;
+}
+
+.mail-list-form {
+    text-align: right;
+}
+
+.mail-list-button {
+    background-color: #333333;
+    color: #f2f2f2;
+}
+
+.social-links {
+    word-spacing: 30px; 
+    text-align: center;
+}
+
+.social-links li a i {
+    font-size: 30px;
+    color: #f2f2f2;
+    text-align: center;
 }
 
 /* Containers */
@@ -82,7 +132,7 @@ body {
 .music-thumb {
     height: 250px;
     text-align: center;
-    width: 250px; /* add media query to make thumbnail 150px and padding bigger on each image for mobile devices */
+    width: 250px;
 }
 
 .music-thumb img {
@@ -111,13 +161,11 @@ body {
 .event-box {
     background-color: #333333;
     padding: 10px;
-    height: 200px;
-    width: 200px;
 }
 
 .event-box h2, .event-box h3 {
     color: #f2f2f2;
-    font-size: 18px;
+    font-size: 30px;
     font-weight: 400;
     letter-spacing: 3px;
     text-align: left;
@@ -131,8 +179,31 @@ body {
 
 .event-link {
     color: #f2f2f2;
-    font-size: 14px;
-    text-align: right;
+    font-size: 30px;
+    padding-right: 10px;
 }
 
 /* Media Queries */
+
+@media(max-width: 575px) {
+
+.social-links {
+    word-spacing: 15px; /* fits links on single row */
+}
+
+.credits {
+    font-size: 10px;
+    text-align: center; /* center-align for mobile */
+}
+
+.music-thumb {
+    height: 150px;
+    width: 150px; /* makes thumbnail 150px and padding bigger on each image for mobile devices */
+    padding: 30px 30px 30px 30px;
+}
+
+.event-box h2, .event-box h3, .event-link-row {
+    text-align: center; /* center-align for mobile */
+}
+
+}
