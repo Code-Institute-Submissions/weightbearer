@@ -92,7 +92,7 @@ body {
     left: 0; /* this needs to stay at the top on scrolling, and is taken from the CI Bootstrap module walkthrough */
     padding-left: 0;
     padding-right: 0;
-    position: absolute;
+    position: sticky;
     top: 0;
     z-index: 1;
 }
@@ -156,6 +156,55 @@ body {
 
 /* Shop */
 
+.checkout {
+    background-color: #333333;
+    text-align: right;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.fa-cart-arrow-down {
+    color: #f2f2f2;
+    font-size: 40px;
+}
+
+.shop-box {
+    background-color: #333333;
+    padding: 10px;
+}
+
+.shop-box h2, h3 {
+    color: #f2f2f2;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.shop-box h3 {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.shop-box p {
+    color: #f2f2f2;
+    font-size: 18px;
+}
+
+.shop-preview {
+    height: 300px;
+    width: 300px;
+}
+
+.shop-link {
+    color: #f2f2f2;
+    font-size: 30px;
+    padding-right: 10px;
+    text-align: right;
+}
+
 /* Shows */
 
 .event-box {
@@ -168,13 +217,18 @@ body {
     font-size: 30px;
     font-weight: 400;
     letter-spacing: 3px;
-    text-align: left;
+    text-align: center;
     text-transform: uppercase;
 }
 
 .event-box h3 {
     font-size: 14px;
     font-weight: 300;
+}
+
+.event-link-row {
+    text-align: center;
+    word-spacing: 30px;
 }
 
 .event-link {
