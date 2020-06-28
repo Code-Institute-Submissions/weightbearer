@@ -7,15 +7,37 @@ body {
 
 /* Headings */
 
-.header {
-    background: url('../images/banners/text-line-narrow.png') no-repeat center center fixed;
+.header-index, .header-about, .header-contact, .header-music, .header-shop, .header-shows {
+    background: url('../images/banners/text-line-narrow.png') no-repeat center center;
+    background-position: 0% 0%;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    border-radius: 0;
     clear: both;
     display: flex;
     height: 35vh;
+}
+
+.header-about {
+    background: url('../images/banners/banner-head-col.jpg') no-repeat center center;
+}
+
+.header-contact {
+    background: url('../images/banners/banner-head-col.jpg') no-repeat center center;
+}
+
+.header-music {
+    background: url('../images/banners/banner-head-col.jpg') no-repeat center center;
+}
+
+.header-shop {
+    background: url('../images/banners/banner-head-col.jpg') no-repeat center center;
+}
+
+.header-shows {
+    background: url('../images/banners/banner-head-col.jpg') no-repeat center center;
 }
 
 .jumbotron {
@@ -25,7 +47,13 @@ body {
 .navbar {
     background-color: #f2f2f2;
     height: 60px;
-    position: absolute;
+    position: sticky;
+}
+
+.navbar-about {
+    background-color: #a80e0e;
+    height: 60px;
+    position: sticky;
 }
 
 .navbar-brand img {
@@ -42,6 +70,17 @@ body {
     text-transform: uppercase;
 }
 
+.nav-link-about {
+    border-radius: 10px;
+    color: #d1a511;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 3px;
+    padding: 8px; /* had to include additional padding, couldn't work out why
+    á items were pushed together when I used this tag instead of the regular nav-link */
+    text-transform: uppercase;
+}
+
 .nav-link:hover { /* Taken from the CI Resume Walkthrough */
     background-color: #333333;
     color: #f2f2f2;
@@ -51,9 +90,18 @@ body {
     -o-transition: all 0.15s ease;
 }
 
+.nav-link-about:hover { /* Taken from the CI Resume Walkthrough */
+    background-color: #d1a511;  /* needs to remove underline from link hover */
+    color: #a80e0e;
+    transition: all 0.15s ease;
+    -moz-transition: all 0.15s ease;
+    -webkit-transition: all 0.15s ease;
+    -o-transition: all 0.15s ease;
+}
+
 /* Footer */
 
-.footer {
+.footer, .footer-about {
     background-color: #333333;
     color: #f2f2f2;
     font-size: 14px;
@@ -61,12 +109,29 @@ body {
     padding-top: 15px;
 }
 
-.credits {
+.footer-about {
+    background-color: #a80e0e;
+    color: #d1a511;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.credits, .credits-about {
     font-size: 12px;
     text-align: left;
 }
 
-.mail-list-form {
+.credits a {
+    color: #f2f2f2;
+}
+
+.credits-about a {
+    color: #d1a511;
+}
+
+.mail-list-form, .mail-list-about-form {
     text-align: right;
 }
 
@@ -75,7 +140,12 @@ body {
     color: #f2f2f2;
 }
 
-.social-links {
+.mail-list-about-button {
+    background-color: #a80e0e;
+    color: #d1a511;
+}
+
+.social-links, .social-links-about {
     word-spacing: 30px; 
     text-align: center;
 }
@@ -86,10 +156,16 @@ body {
     text-align: center;
 }
 
+.social-links-about li a i {
+    font-size: 30px;
+    color: #d1a511;
+    text-align: center;
+}
+
 /* Containers */
 
-.nav-container {
-    left: 0; /* this needs to stay at the top on scrolling, and is taken from the CI Bootstrap module walkthrough */
+.nav-container { /* this needs to stay at the top on scrolling, currently disappears after header */
+    left: 0; /* and is taken from the CI Bootstrap module walkthrough */
     padding-left: 0;
     padding-right: 0;
     position: sticky;
@@ -123,7 +199,45 @@ body {
     text-transform: uppercase;
 }
 
+h1 {
+    font-size: 42px;
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+
 /* About */
+
+.bio-box {
+    background-color: #a80e0e;
+    color:#d1a511;
+}
+
+.bio-box h1 {
+    color: #d1a511;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.bio-box h2 {
+    color: #f2f2f2;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.bio-box p {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: justify;
+}
+
+.headshot {
+    height: 300px;
+}
 
 /* Contact */
 
@@ -159,7 +273,7 @@ body {
 .checkout {
     background-color: #333333;
     text-align: right;
-    padding-right: 10px;
+    padding-right: 80px;
     padding-bottom: 20px;
     padding-top: 20px;
 }
@@ -186,15 +300,19 @@ body {
 .shop-box h3 {
     font-size: 18px;
     font-weight: 300;
+    text-transform: none;
 }
 
 .shop-box p {
     color: #f2f2f2;
-    font-size: 18px;
+    font-size: 14px;
+    padding: 20px;
+    text-align: justify;
 }
 
 .shop-preview {
     height: 300px;
+    justify-items: center;
     width: 300px;
 }
 
