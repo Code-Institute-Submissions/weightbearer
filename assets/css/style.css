@@ -3,35 +3,37 @@
 body {
     font-family: "Merriweather Sans", sans-serif;
     font-weight: 300;
-    text-transform: uppercase;
 }
 
 /* Headings */
 
 .header {
-    background: url('.../assets/images/banners/banner-text-line.jpg') no-repeat center center fixed;
+    background: url('../images/banners/text-line-narrow.png') no-repeat center center fixed;
+    background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
     clear: both;
     display: flex;
-    height: 25vh;
-    margin: 0;
-    padding: 0;
-    width: 100vw;
+    height: 35vh;
 }
 
 .navbar {
     height: 60px;
+    background-color: #f2f2f2;
 }
 
 .navbar-brand img {
     height: 100%;
-    margin: 0;
-    padding: 0;
-    vertical-align: middle;
     width: 140px;
+}
+
+.nav-link {
+    color: #333333;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
 }
 
 /* Containers */
@@ -50,8 +52,19 @@ body {
 /* Index */
 
 .index-box {
-    background-color: #aaaaaa;
-    border-radius: 5px;
+    background-color: #333333;
+    color: #f2f2f2;
+}
+
+.index-box h2 {
+    color: #f2f2f2;
+    font-family: 'Merriweather Sans';
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
+}
 
 /* About */
 
@@ -60,26 +73,28 @@ body {
 /* Music */
 
 .music-thumb {
-    display: block;
     height: 250px;
     text-align: center;
     width: 250px; /* add media query to make thumbnail 150px and padding bigger on each image for mobile devices */
 }
 
 .music-thumb img {
-    height: 200px;
-    weight: 200px;
-    margin: 10px;
+    border-color: #333333;
     border-radius: 10px;
-    border-color: #4c4c4c;
     border-width: 5px;
+    height: 200px;
+    margin: 10px;
+    text-align: center;
+    weight: 200px;
 }
 
-.song-heading {
-    text-align: center;
-    font-size: 12px;
+.music-thumb h2 {
+    color: #333333;
+    font-size: 18px;
     font-weight: 400;
-    color: #4c4c4c;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 /* Shop */
