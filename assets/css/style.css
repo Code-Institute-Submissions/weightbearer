@@ -29,7 +29,7 @@ body {
 }
 
 .header-music {
-    background: url('../images/banners/banner-head-col.jpg') no-repeat center center;
+    background: url('../images/banners/banner-head-bw.png') no-repeat center center;
 }
 
 .header-shop {
@@ -99,6 +99,15 @@ body {
     -o-transition: all 0.15s ease;
 }
 
+.nav-container { /* this needs to stay at the top on scrolling, currently disappears after header */
+    left: 0; /* and is taken from the CI Bootstrap module walkthrough */
+    padding-left: 0;
+    padding-right: 0;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
 /* Footer */
 
 .footer, .footer-about {
@@ -162,17 +171,6 @@ body {
     text-align: center;
 }
 
-/* Containers */
-
-.nav-container { /* this needs to stay at the top on scrolling, currently disappears after header */
-    left: 0; /* and is taken from the CI Bootstrap module walkthrough */
-    padding-left: 0;
-    padding-right: 0;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-}
-
 /* Colours */
 
 .colour-light {
@@ -183,11 +181,19 @@ body {
     color: #333333;
 }
 
+.colour-red {
+    color: #a80e0e;
+}
+
+.colour-gold {
+    color: #d1a511;
+}
 /* Index */
 
 .index-box {
     background-color: #333333;
     color: #f2f2f2;
+    padding-top: 10px;
 }
 
 .index-box h2 {
@@ -207,31 +213,49 @@ h1 {
 
 /* About */
 
+.bio-container {
+    background: url('../images/backgrounds/diamond-orange.png') no-repeat center center;
+    background-size: 0% 0%;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-color: rgba(0,0,0,0.1)
+}
+
 .bio-box {
     background-color: #a80e0e;
     color:#d1a511;
 }
 
 .bio-box h1 {
-    color: #d1a511;
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
     text-transform: uppercase;
 }
 
-.bio-box h2 {
-    color: #f2f2f2;
-    font-size: 18px;
+.profile-box {
+    background-color: #333333;
+    border-radius: 20px;
+    color: #d1a511;
+    margin: 10px;
+    text-align: center;
+}
+
+.profile-box h2 {
     font-weight: 400;
     letter-spacing: 3px;
-    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 24px;
     text-transform: uppercase;
 }
 
-.bio-box p {
-    padding-left: 20px;
-    padding-right: 20px;
+.profile-box p {
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
     text-align: justify;
 }
 
@@ -241,40 +265,76 @@ h1 {
 
 /* Contact */
 
+.contact-container {
+
+}
+
 /* Music */
 
-.music-thumb {
-    height: 250px;
+.music-container {
+    background: url('../images/backgrounds/diamond-purple.png') no-repeat center center;
+    background-size: 0% 0%;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-color: rgba(0,0,0,0.1)
+}
+
+.music-box {
+    background-color: #333333;
+    border-radius: 10px;
+    color: #f2f2f2;
+    margin: 10px;
     text-align: center;
-    width: 250px;
+}
+
+.music-box h2 { /* remove blue underline from hyperlink hovers */
+    font-weight: 400;
+    letter-spacing: 3px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.music-thumb {
+    height: 300px;
+    width: 300px;
 }
 
 .music-thumb img {
     border-color: #333333;
     border-radius: 10px;
-    border-width: 5px;
     height: 200px;
     margin: 10px;
-    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
     weight: 200px;
 }
 
 .music-thumb h2 {
-    color: #333333;
+    color: #f2f2f2;
     font-size: 18px;
     font-weight: 400;
     letter-spacing: 3px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-align: center;
     text-transform: uppercase;
 }
 
 /* Shop */
 
+.shop-container {
+
+}
+
 .checkout {
     background-color: #333333;
     text-align: right;
-    padding-right: 80px;
     padding-bottom: 20px;
+    padding-right: 80px;
     padding-top: 20px;
 }
 
@@ -285,7 +345,7 @@ h1 {
 
 .shop-box {
     background-color: #333333;
-    padding: 10px;
+    padding: 20px;
 }
 
 .shop-box h2, h3 {
@@ -293,6 +353,8 @@ h1 {
     font-size: 30px;
     font-weight: 400;
     letter-spacing: 3px;
+    padding-bottom: 20px;
+    padding-top: 20px;
     text-align: center;
     text-transform: uppercase;
 }
@@ -300,6 +362,8 @@ h1 {
 .shop-box h3 {
     font-size: 18px;
     font-weight: 300;
+    padding-bottom: 20px;
+    padding-top: 20px;
     text-transform: none;
 }
 
@@ -325,9 +389,13 @@ h1 {
 
 /* Shows */
 
+.event-container {
+
+}
+
 .event-box {
     background-color: #333333;
-    padding: 10px;
+    padding: 20px;
 }
 
 .event-box h2, .event-box h3 {
@@ -335,6 +403,8 @@ h1 {
     font-size: 30px;
     font-weight: 400;
     letter-spacing: 3px;
+    padding-bottom: 20px;
+    padding-top: 20px;
     text-align: center;
     text-transform: uppercase;
 }
