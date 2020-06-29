@@ -30,25 +30,11 @@ body {
     center;
 }
 
-.header-contact {
-  background: url("../images/banners/banner-head-bw.png") no-repeat center
-    center;
-}
-
-.header-music {
+.header-music,
+.header-shows {
   background: url("../images/banners/banner-head-bw.png") no-repeat center
     center;
   /* needs to stretch vertically and shrink horizontally */
-}
-
-.header-shop {
-  background: url("../images/banners/text-line-narrow.png") no-repeat center
-    center;
-}
-
-.header-shows {
-  background: url("../images/banners/banner-head-col.jpg") no-repeat center
-    center;
 }
 
 .jumbotron {
@@ -58,7 +44,6 @@ body {
 .navbar {
   background-color: #f2f2f2;
   height: 60px;
-  padding-right: 0px;
   position: sticky;
 }
 
@@ -370,8 +355,10 @@ h1 {
 }
 
 .music-box {
-  background-color: #333333;
+  background-color: #f2f2f2;
+  padding-color: #693288;
   border-radius: 10px;
+  border-width: 5px;
   color: #f2f2f2;
   margin: 10px;
   text-align: center;
@@ -402,7 +389,7 @@ h1 {
 }
 
 .music-thumb h2 {
-  color: #f2f2f2;
+  color: #693288;
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 3px;
@@ -410,6 +397,16 @@ h1 {
   padding-bottom: 10px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.music-links-violet {
+  word-spacing: 30px;
+  text-align: center;
+}
+
+.music-links-violet li a i {
+  font-size: 30px;
+  color: #693288;
 }
 
 /* Shop */
@@ -504,11 +501,11 @@ h3 {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-.live-title {
+.live-title, .contact-title {
   background-color: #333333;
 }
 
-.live-title h1 {
+.live-title h1, .contact-title h1 {
   color: #f2f2f2;
   padding-bottom: 20px;
   padding-top: 20px;
