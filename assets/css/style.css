@@ -21,7 +21,7 @@ body {
   -o-background-size: cover;
   border-radius: 0px;
   clear: both;
-  display: flex;
+  display: flex block;
   height: 35vh;
 }
 
@@ -41,16 +41,16 @@ body {
   margin-bottom: 0;
 }
 
-.navbar {
+.navbar,
+.navbar-about {
   background-color: #f2f2f2;
   height: 60px;
-  position: sticky;
+  position: fixed;
+  width: 100%;
 }
 
 .navbar-about {
   background-color: #a80e0e;
-  height: 60px;
-  position: sticky;
 }
 
 .navbar-brand img {
@@ -58,38 +58,32 @@ body {
   width: 140px;
 }
 
-.nav-link {
+.nav-link,
+.nav-link-about,
+.nav-link-music {
   border-radius: 10px;
   color: #333333;
   font-weight: 500;
   font-size: 18px;
-  letter-spacing: 3px;
+  letter-spacing: 6px;
   text-transform: uppercase;
 }
 
 .nav-link-about {
-  border-radius: 10px;
   color: #d1a511;
-  font-weight: 500;
-  font-size: 18px;
-  letter-spacing: 3px;
-  padding: 8px; /* had to include additional padding, coul not work out why
+  padding: 8px; /* had to include additional padding, could not work out why
     items were pushed together when I used this tag instead of the regular nav-link */
-  text-transform: uppercase;
 }
 
 .nav-link-music {
-  border-radius: 10px;
   color: #693288;
-  font-weight: 500;
-  font-size: 18px;
-  letter-spacing: 3px;
-  padding: 8px; /* had to include additional padding, coul not work out why
+  padding: 8px; /* had to include additional padding, could not work out why
     items were pushed together when I used this tag instead of the regular nav-link */
-  text-transform: uppercase;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link-about:hover,
+.nav-link-music:hover {
   /* Taken from the CI Resume Walkthrough */
   background-color: #333333;
   color: #f2f2f2;
@@ -97,35 +91,28 @@ body {
   -moz-transition: all 0.15s ease;
   -webkit-transition: all 0.15s ease;
   -o-transition: all 0.15s ease;
+  text-decoration: none;
 }
 
 .nav-link-about:hover {
   /* Taken from the CI Resume Walkthrough */
-  background-color: #d1a511; /* needs to remove underline from link hover */
+  background-color: #d1a511;
   color: #a80e0e;
-  transition: all 0.15s ease;
-  -moz-transition: all 0.15s ease;
-  -webkit-transition: all 0.15s ease;
-  -o-transition: all 0.15s ease;
 }
 
-.nav-link-about:hover {
+.nav-link-music:hover {
   /* Taken from the CI Resume Walkthrough */
-  background-color: #693288; /* needs to remove underline from link hover */
+  background-color: #693288;
   color: #f2f2f2;
-  transition: all 0.15s ease;
-  -moz-transition: all 0.15s ease;
-  -webkit-transition: all 0.15s ease;
-  -o-transition: all 0.15s ease;
 }
 
 .nav-container {
-  /* this needs to stay at the top on scrolling, currently disappears after header */
   left: 0; /* and is taken from the CI Bootstrap module walkthrough */
   padding-left: 0;
   padding-right: 0;
   position: sticky;
   top: 0;
+  width: 100vw;
   z-index: 1;
 }
 
@@ -170,8 +157,10 @@ h1 {
   text-align: left;
 }
 
-.credits a, .credits-music a {
+.credits a,
+.credits-music a {
   color: #f2f2f2;
+  text-decoration: none;
 }
 
 .credits-about a {
@@ -195,8 +184,8 @@ h1 {
 }
 
 .mail-list-music-button {
-    background-color: #693288;
-    color: #f2f2f2;
+  background-color: #693288;
+  color: #f2f2f2;
 }
 
 .social-links,
@@ -207,19 +196,18 @@ h1 {
 }
 
 .social-links li a i,
-.social-links-music li a i {
+.social-links-music li a i,
+.social-links-about li a i {
   font-size: 30px;
   color: #f2f2f2;
   text-align: center;
 }
 
 .social-links-about li a i {
-  font-size: 30px;
   color: #d1a511;
-  text-align: center;
 }
 
-/* Colours */
+/* Colours - Reference Only */
 
 .colour-light {
   color: #f2f2f2;
@@ -238,7 +226,7 @@ h1 {
 }
 
 .colour-violet {
-    color: #693288;
+  color: #693288;
 }
 
 /* Index */
@@ -356,7 +344,6 @@ h1 {
 
 .music-box {
   background-color: #f2f2f2;
-  padding-color: #693288;
   border-radius: 10px;
   border-width: 5px;
   color: #f2f2f2;
@@ -364,19 +351,8 @@ h1 {
   text-align: center;
 }
 
-.music-box h2 {
-  /* remove blue underline from hyperlink hovers */
-  font-weight: 400;
-  letter-spacing: 3px;
-  padding-top: 10px;
-  padding-bottom: 20px;
-  font-size: 24px;
-  text-transform: uppercase;
-}
-
 .music-thumb {
   height: 300px;
-  width: 300px;
 }
 
 .music-thumb img {
@@ -385,10 +361,10 @@ h1 {
   margin: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
-  width: 200px;
 }
 
 .music-thumb h2 {
+  border-radius: 5px;
   color: #693288;
   font-size: 18px;
   font-weight: 400;
@@ -397,6 +373,13 @@ h1 {
   padding-bottom: 10px;
   text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
+}
+
+.music-thumb h2:hover {
+  color: #f2f2f2;
+  background-color: #693288;
+  text-decoration: none;
 }
 
 .music-links-violet {
@@ -412,8 +395,8 @@ h1 {
 /* Shop */
 
 #shop-container {
-  background: url("../images/backgrounds/diamond-gun.png") no-repeat
-    center center;
+  background: url("../images/backgrounds/diamond-gun.png") no-repeat center
+    center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -449,6 +432,7 @@ h1 {
   border-radius: 10px;
   color: #333333;
   margin: 20px;
+  padding-top: 20px;
   text-align: center;
 }
 
@@ -479,33 +463,43 @@ h3 {
 .shop-box img {
   border-radius: 10px;
   height: 200px;
-  padding-top: 10px;
 }
 
 .shop-link {
+  border-radius: 15px;
   color: #333333;
   font-size: 30px;
+  padding-bottom: 10px;
+  padding-left: 10px;
   padding-right: 10px;
-  text-align: right;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.shop-link:hover {
+  background-color: #333333;
+  color: #f2f2f2;
+  font-size: 28px;
 }
 
 /* Shows */
 
 #event-container {
-  background: url("../images/backgrounds/diamond-gun.png") no-repeat
-    center center;
+  background: url("../images/backgrounds/diamond-gun.png") no-repeat center
+    center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-color: rgba(0, 0, 0, 0.1);
 }
 
-.live-title, .contact-title {
+.live-title,
+.contact-title {
   background-color: #333333;
 }
 
-.live-title h1, .contact-title h1 {
+.live-title h1,
+.contact-title h1 {
   color: #f2f2f2;
   padding-bottom: 20px;
   padding-top: 20px;
@@ -515,7 +509,7 @@ h3 {
 .event-box {
   background-color: #333333;
   border-radius: 10px;
-  margin: 20px;
+  margin: 20px 10px 20px 10px;
 }
 
 .event-box h2,
@@ -550,14 +544,27 @@ h3 {
 /* Media Queries */
 
 @media (max-width: 575px) {
+  .header-index,
+  .header-about,
+  .header-contact,
+  .header-music,
+  .header-shop,
+  .header-shows {
+    background: url("../images/icons/text-narrow.png") no-repeat center center;
+  }
   .social-links {
     word-spacing: 15px; /* fits links on single row */
   }
 
-  .credits {
+  .credits, .credits-about, .credits-music {
     font-size: 10px;
     text-align: center; /* center-align for mobile */
   }
+
+  .mail-list-form,
+.mail-list-about-form,
+.mail-list-music-form {
+  text-align: center;
 
   .music-thumb {
     height: 150px;
