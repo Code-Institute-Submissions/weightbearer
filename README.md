@@ -4,12 +4,15 @@ Welcome to my user-centric front-end development milestone project (MS1 for shor
  
 ## UX
 
-I've created a website which centralises resources that would otherwise be spread across a number of social media websites. The band currently uses Bandcamp for hosting and selling music, Spotify and YouTube for streaming and Facebook for publicity and events.
+I've created a website which centralises resources that would otherwise be spread across a number of social media websites. The band currently uses Bandcamp for hosting and selling music, Spotify and YouTube for streaming and Facebook for publicity and events. I've retained full links to these pages but included the ability to listen and download music direct from the website.
 
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
-- As a user type, I want to perform an action, so that I can achieve a goal.
+### User Stories
 
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
+- LISTEN: Users who want to listen to the band's music can either listen using the mp3s on the Music page or re-direct to Spotify, Bandcamp or YouTube.
+
+- PURCHASE: Users who wish to purchase band merchandise can visit the Shop page. This page is a dummy until I have completed the Javascript module.
+
+- CONTACT: Users who need to contact the band can complete the form contact form and specify their request.
 
 A wireframe for this project is included in the repository, with desktop, tablet and mobile versions in both .bmpr and .pdf formats.
 
@@ -17,12 +20,12 @@ A wireframe for this project is included in the repository, with desktop, tablet
 
 In this section, you should go over the different parts of your project, and describe each in a sentence or so.
 
-- index - The landing page includes a short biography of the band, as well as prominent links to music, a shop and a diary of live events, in line with the main user stories;
-- music - Contains links to each of the band's releases so far. I've included the album artwork for each as a thumbnail, which is inspired by the presentation style used by Spotify and Bandcamp, focusing primarily on individual songs;
-- shop - Contains the band's merchandise, namely their first record, a t-shirt and a sticker pack. These are currently in production so I created dummy images for these;
-- shows - Contains a diary of upcoming shows, with a dummy link to Facebook events;
-- about us - A short history of the band, its members, their influences and instruments;
-- contact - A basic form that allows people to send a message to the band, as well as selecting the reason for enquiry.
+- Index - The landing page includes a short biography of the band, as well as prominent links to music, a shop and a diary of live events, in line with the main user stories;
+- Music - Contains links to each of the band's releases so far. I've included the album artwork for each as a thumbnail, which is inspired by the presentation style used by Spotify and Bandcamp, focusing primarily on individual songs;
+- Shop - Contains the band's merchandise, namely their first record, a t-shirt and a sticker pack. These are currently in production so I've used dummy images for these;
+- Shows - Contains a diary of upcoming shows, with a dummy link to Facebook events as shows are obviously cancelled given current circumstances;
+- About - A short history of the band, its members, their influences and instruments;
+- Contact - A basic form that allows people to send a message to the band, as well as selecting the reason for enquiry.
 
 ### Existing Features
 - Feature 1 - allows users X to achieve Y, by having them fill out Z
@@ -37,18 +40,13 @@ For some/all of your features, you may choose to reference the specific project 
 
 In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
 
-- [JQuery](https://jquery.com)
-    - The project uses **JQuery** to simplify DOM manipulation.
+- [Bootstrap](https://getbootstrap.com/)'s grid framework helped me bring my initial wireframe ideas to life, while [Font Awesome](https://fontawesome.com/)'s icons and [Merriweather Sans](https://fonts.google.com/specimen/Merriweather+Sans) made things look that bit more professional.
 
-- Gitpod
+- I'm not cocky enough to start using another editor so I've stuck with the trusty [Gitpod](https://www.gitpod.io)!
 
-- HTML
+- [Balsamiq](https://www.balsamiq.com) was recommended to me by my mentor Precious Ijege as a good drafting tool, and it took me very little time to get to grips with it. I will definitely be using this again in the future.
 
-- CSS3
-
-- Balsamiq
-
-- Pixlr 
+- [Pixlr](https://www.pixlr.com) is a great free software package that enabled me to quickly pick out hex colors and edit existing material that the band provided me with.
 
 
 ## Testing
@@ -86,11 +84,12 @@ In addition, if it is not obvious, you should also describe how to run your code
 ## Credits
 
 ### Content
-- The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
+- Header and footer formats borrowed from CI course content
 
 ### Media
-- Photography and graphic designs were provided directly by the band, with the graphics being designed by {Secret Industries]().
+- Photography and graphic designs were provided directly by the band, with the graphics being designed by [Secret Industries](https://www.instagram.com/secretindustries/).
 
 ### Acknowledgements
 
-- I received inspiration for this project from X
+- The band themselves had mentioned needing a website previously so I'm happy they let me use them as a guinea pig in putting this together.
+- My mentor Precious helped this project seem a bit more manageable after I'd come up with my initial ideas. He pointed out what he'd expect using his experience of similar previous projects, and it was good to get that professional perspective after I'd researched other band websites of varying quality.
