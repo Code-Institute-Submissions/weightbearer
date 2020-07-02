@@ -14,11 +14,11 @@ I've created a website which centralises resources that would otherwise be sprea
 
 - CONTACT: Users who need to contact the band can complete the form contact form and specify their request.
 
-A wireframe for this project is included in the repository, with desktop, tablet and mobile versions in both .bmpr and .pdf formats.
+A wireframe for this project is included in the repository, with [desktop](https://github.com/kiehozero/weightbearer/blob/master/wireframes/Weight%20Bearer%20Desktop%20Wireframes.pdf), [tablet](https://github.com/kiehozero/weightbearer/blob/master/wireframes/Weight%20Bearer%20Tablet%20Wireframes.pdf) and [mobile](https://github.com/kiehozero/weightbearer/blob/master/wireframes/Weight%20Bearer%20Mobile%20Wireframes.pdf) versions.
 
 ## Features
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
+###Existing Features
 
 - Index - The landing page includes a short biography of the band, as well as prominent links to music, a shop and a diary of live events, in line with the main user stories;
 - Music - Contains links to each of the band's releases so far. I've included the album artwork for each as a thumbnail, which is inspired by the presentation style used by Spotify and Bandcamp, focusing primarily on individual songs;
@@ -27,12 +27,6 @@ In this section, you should go over the different parts of your project, and des
 - About - A short history of the band, its members, their influences and instruments;
 - Contact - A basic form that allows people to send a message to the band, as well as selecting the reason for enquiry.
 
-### Existing Features
-- Feature 1 - allows users X to achieve Y, by having them fill out Z
-- ...
-
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
-
 ### Features Left to Implement
 - I've included a dummy contact form and shop that will be fleshed out once I've completed the JavaScript module.
 
@@ -40,13 +34,21 @@ For some/all of your features, you may choose to reference the specific project 
 
 In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
 
-- [Bootstrap](https://getbootstrap.com/)'s grid framework helped me bring my initial wireframe ideas to life, while [Font Awesome](https://fontawesome.com/)'s icons and [Merriweather Sans](https://fonts.google.com/specimen/Merriweather+Sans) made things look that bit more professional.
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
 
-- I'm not cocky enough to start using another editor so I've stuck with the trusty [Gitpod](https://www.gitpod.io)!
+- [CSS3](https://en.wikipedia.org/wiki/CSS3)
 
-- [Balsamiq](https://www.balsamiq.com) was recommended to me by my mentor Precious Ijege as a good drafting tool, and it took me very little time to get to grips with it. I will definitely be using this again in the future.
+- [Bootstrap](https://getbootstrap.com/)
+    - Bootstrap's grid framework helped me bring my initial wireframe ideas to life, while [Font Awesome](https://fontawesome.com/)'s icons and [Merriweather Sans](https://fonts.google.com/specimen/Merriweather+Sans) made things look that bit more professional.
 
-- [Pixlr](https://www.pixlr.com) is a great free software package that enabled me to quickly pick out hex colors and edit existing material that the band provided me with.
+- [Gitpod](https://www.gitpod.io)
+    - I'm not cocky enough to start using another editor so I've stuck with the trusty Gitpod!
+
+- [Balsamiq](https://www.balsamiq.com)
+    - Balsamiq was recommended to me by my mentor Precious Ijege as a good drafting tool, and it took me very little time to get to grips with it. I will definitely be using this again in the future.
+
+- [Pixlr](https://www.pixlr.com)
+    - Pixlr is a great free software package that enabled me to quickly pick out hex colors and edit existing material that the band provided me with.
 
 
 ## Testing
@@ -92,4 +94,4 @@ In addition, if it is not obvious, you should also describe how to run your code
 ### Acknowledgements
 
 - The band themselves had mentioned needing a website previously so I'm happy they let me use them as a guinea pig in putting this together.
-- My mentor Precious helped this project seem a bit more manageable after I'd come up with my initial ideas. He pointed out what he'd expect using his experience of similar previous projects, and it was good to get that professional perspective after I'd researched other band websites of varying quality.
+- My mentor [Precious](https://github.com/precious-ijege) helped this project seem a bit more manageable after I'd come up with my initial ideas. He pointed out what he'd expect using his experience of similar previous projects, and it was good to get that professional perspective after I'd researched other band websites of varying quality.
