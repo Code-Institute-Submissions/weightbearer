@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;700;800&display=swap");
 
 body {
-  font-family: "Merriweather Sans", sans-serif;
-  font-weight: 300;
+    font-family: "Merriweather Sans", sans-serif;
+    font-weight: 300;
 }
 
 /* Headings */
@@ -13,327 +13,104 @@ body {
 .header-music,
 .header-shop,
 .header-shows {
-  background: url("../images/banners/text-line-narrow.png") no-repeat center
+    background: url("../images/banners/text-line-narrow.png") no-repeat center
     center;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  border-radius: 0px;
-  clear: both;
-  display: block;
-  height: 35vh;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    border-radius: 0px;
+    clear: both;
+    display: block;
+    height: 35vh;
 }
 
 .header-about {
-  background: url("../images/banners/banner-head-col.jpg") no-repeat center
+    background: url("../images/banners/banner-head-col.jpg") no-repeat center
     center;
 }
 
 .header-music,
 .header-shows {
-  background: url("../images/banners/banner-head-bw.png") no-repeat center
+    background: url("../images/banners/banner-head-bw.png") no-repeat center
     center;
-  /* needs to stretch vertically and shrink horizontally */
+    /* needs to stretch vertically and shrink horizontally */
 }
 
-.jumbotron {
-  margin-bottom: 0;
-}
-
-.navbar,
-.navbar-about {
-  background-color: #f2f2f2;
-  height: 60px;
-  position: fixed;
-  width: 100%;
-}
-
-.navbar-about {
-  background-color: #a80e0e;
+.navbar {
+    background-color: #f2f2f2;
+    height: 60px;
+    position: fixed;
+    width: 100%;
 }
 
 .navbar-brand img {
-  height: 100%; /* allows band logo to fill navbar */
-  width: 140px;
+    height: 100%; /* allows band logo to fill navbar */
+    width: 140px;
 }
 
-.nav-link,
-.nav-link-about,
-.nav-link-music {
-  border-radius: 10px;
-  color: #333333;
-  font-weight: 500;
-  font-size: 18px;
-  letter-spacing: 6px;
-  text-transform: uppercase;
+.nav-item {
+    text-align: center;
 }
 
-.nav-link-about {
-  color: #d1a511;
-  padding: 8px; /* had to include additional padding, could not work out why
-    items were pushed together when I used this tag instead of the regular nav-link */
+.nav-link {
+    border-radius: 10px;
+    Color: #693288;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
 }
 
-.nav-link-music {
-  color: #693288;
-  padding: 8px; /* had to include additional padding, could not work out why
-    items were pushed together when I used this tag instead of the regular nav-link */
-}
-
-.nav-link:hover,
-.nav-link-about:hover,
-.nav-link-music:hover {
-  /* Taken from the CI Resume Walkthrough */
-  background-color: #333333;
-  color: #f2f2f2;
-  transition: all 0.15s ease;
-  -moz-transition: all 0.15s ease;
-  -webkit-transition: all 0.15s ease;
-  -o-transition: all 0.15s ease;
-  text-decoration: none;
-}
-
-.nav-link-about:hover {
-  /* Taken from the CI Resume Walkthrough */
-  background-color: #d1a511;
-  color: #a80e0e;
-}
-
-.nav-link-music:hover {
-  /* Taken from the CI Resume Walkthrough */
-  background-color: #693288;
-  color: #f2f2f2;
+.nav-link:hover {
+    /* Taken from the CI Resume Walkthrough */
+    background-color: #693288;
+    color: #f2f2f2;
+    transition: all 0.15s ease;
+    -moz-transition: all 0.15s ease;
+    -webkit-transition: all 0.15s ease;
+    -o-transition: all 0.15s ease;
+    text-decoration: none;
 }
 
 .nav-container {
-  left: 0; /* and is taken from the CI Bootstrap module walkthrough */
-  padding-left: 0;
-  padding-right: 0;
-  position: sticky;
-  top: 0;
-  width: 100vw;
-  z-index: 1;
+    left: 0; /* and is taken from the CI Bootstrap module walkthrough */
+    padding-left: 0;
+    padding-right: 0;
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    z-index: 1;
 }
 
-h1 {
-  font-size: 42px;
-  font-weight: 600;
-  letter-spacing: 4px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-/* Footer */
-
-.footer,
-.footer-about,
-.footer-music {
-  background-color: #333333;
-  color: #f2f2f2;
-  font-size: 14px;
-  letter-spacing: 2px;
-  padding-top: 15px;
-}
-
-.footer-about {
-  background-color: #a80e0e;
-  color: #d1a511;
-}
-
-.footer-music {
-  background-color: #693288;
-  color: #f2f2f2;
-}
-
-.inline-block {
-  display: inline-block;
-}
-
-.credits,
-.credits-about,
-.credits-music {
-  font-size: 12px;
-  text-align: left;
-}
-
-.credits a,
-.credits-music a {
-  color: #f2f2f2;
-  text-decoration: none;
-}
-
-.credits-about a {
-  color: #d1a511;
-}
-
-.mail-list-form,
-.mail-list-about-form,
-.mail-list-music-form {
-  text-align: right;
-}
-
-.mail-list-button {
-  background-color: #333333;
-  color: #f2f2f2;
-}
-
-.mail-list-about-button {
-  background-color: #a80e0e;
-  color: #d1a511;
-}
-
-.mail-list-music-button {
-  background-color: #693288;
-  color: #f2f2f2;
-}
-
-.social-links,
-.social-links-about,
-.social-links-music {
-  word-spacing: 30px;
-  text-align: center;
-}
-
-.social-links li a i,
-.social-links-music li a i,
-.social-links-about li a i {
-  font-size: 30px;
-  color: #f2f2f2;
-  text-align: center;
-}
-
-.social-links-about li a i {
-  color: #d1a511;
-}
-
-/* Colours - Reference Only */
-
-.colour-light {
-  color: #f2f2f2;
-}
-
-.colour-dark {
-  color: #333333;
-}
-
-.colour-red {
-  color: #a80e0e;
-}
-
-.colour-gold {
-  color: #d1a511;
-}
-
-.colour-violet {
-  color: #693288;
-}
-
-/* Index */
+/* Containers */
 
 #index-container {
-  background: url("../images/backgrounds/diamond-grey.png") no-repeat center
+  background: url("../images/backgrounds/diamond-purple.png") no-repeat center
     center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
 }
-
-.index-box {
-  background-color: #333333;
-  border-radius: 5px;
-  color: #f2f2f2;
-  margin: 10px;
-  padding-top: 10px;
-}
-
-.index-box h2 {
-  font-size: 18px;
-  font-weight: 400;
-  letter-spacing: 3px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-/* About */
 
 #bio-container {
-  background: url("../images/backgrounds/diamond-orange.png") no-repeat center
+  background: url("../images/backgrounds/diamond-purple.png") no-repeat center
     center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-color: rgba(0, 0, 0, 0.1);
 }
-
-.history-box {
-      background-color: #333333;
-  border-radius: 20px;
-  color: #d1a511;
-  margin: 10px;
-  max-width: 80%; /* this prevents the padding from causing an overlap */
-  /* need to center align items in container */
-  padding-left: 10px;
-  padding-right: 10px;
-  text-align: center;
-}
-
-.bio-box {
-  background-color: #a80e0e;
-  color: #d1a511;
-}
-
-.bio-box h1 {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.profile-box {
-  background-color: #333333;
-  border-radius: 20px;
-  color: #d1a511;
-  margin: 10px;
-  max-width: 30%; /* this prevents the padding from causing an overlap */
-  /* need to center align items in container */
-  text-align: center;
-}
-
-.profile-box h2 {
-  font-weight: 400;
-  letter-spacing: 3px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  font-size: 24px;
-  text-transform: uppercase;
-}
-
-.profile-box p {
-  font-size: 16px;
-  padding-left: 10px;
-  padding-right: 10px;
-  text-align: justify;
-}
-
-.headshot {
-  height: 300px;
-}
-
-/* Contact */
 
 #contact-container {
-  background: url("../images/backgrounds/diamond-grey.png") no-repeat center
+  background: url("../images/backgrounds/diamond-purple.png") no-repeat center
     center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
 }
-
-/* Music */
 
 #music-container {
   background: url("../images/backgrounds/diamond-purple.png") no-repeat center
@@ -346,269 +123,355 @@ h1 {
   text-align: center;
 }
 
-.music-title {
+#shop-container {
+  background: url("../images/backgrounds/diamond-purple.png") no-repeat center
+    center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+#event-container {
+  background: url("../images/backgrounds/diamond-purple.png") no-repeat center
+    center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+/* Page Title Banners */
+
+.section-banner {
+    background-color: #693288;
+    color: #f2f2f2;
+    font-size: 42px;
+    letter-spacing: 5px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.section-banner h1 {
+    font-weight: 600;
+    vertical-align: center;
+}
+
+/* Footer */
+
+.footer {
   background-color: #693288;
-}
-
-.music-title h1 {
   color: #f2f2f2;
-  padding-bottom: 20px;
-  padding-top: 20px;
-  text-align: center;
+  font-size: 14px;
+  letter-spacing: 2px;
+  padding-top: 15px;
 }
 
-.music-box {
-  background-color: #f2f2f2;
-  border-radius: 10px;
-  border-width: 5px;
+.inline-block {
+  display: inline-block;
+}
+
+.credits {
+  font-size: 12px;
+  text-align: left;
+}
+
+.credits a {
   color: #f2f2f2;
-  margin: 10px;
-  max-width: 30%; /* this prevents the padding from causing an overlap */
-  text-align: center;
-  /* need to center align items in container */
-}
-
-.shop-box {
-  background-color: #f2f2f2;
-  border-radius: 10px;
-  color: #333333;
-  margin: 10px;
-    max-width: 30%; /* this prevents the padding from causing an overlap */
-  padding-top: 20px;
-  text-align: center;
-/* need to center align items in container */
-}
-
-.music-thumb {
-  height: 300px;
-}
-
-.music-thumb img {
-  border-radius: 10px;
-  height: 200px;
-  margin: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-.music-thumb h2 {
-  border-radius: 5px;
-  color: #693288;
-  font-size: 18px;
-  font-weight: 400;
-  letter-spacing: 3px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  text-align: center;
-  text-transform: uppercase;
   text-decoration: none;
 }
 
-.music-thumb h2:hover {
-  color: #f2f2f2;
-  background-color: #693288;
-  text-decoration: none;
+.mail-list-form {
+  text-align: right;
 }
 
-.music-links-violet {
+.mail-list-button {
+    background-color: #693288;
+    color: #f2f2f2;
+}
+
+.social-links {
   word-spacing: 30px;
   text-align: center;
 }
 
-.music-links-violet li a i {
+.social-links li a i {
   font-size: 30px;
-  color: #693288;
+  color: #f2f2f2;
+  text-align: center;
+}
+
+/* Content Boxes */
+
+.event-box, .index-box, .music-box, .profile-box, .shop-box {
+    background-color: #693288;
+    color: #f2f2f2;
+    margin: 10px;
+    max-width: 30%; /* this prevents the padding from causing an overlap on devices using col-md-4*/
+    text-align: center;
+    /* need to center align items in container */
+}
+
+.index-box {
+    border-radius: 5px;
+    padding-top: 10px;
+    text-align: justify;
+}
+
+.profile-box {
+    border-radius: 20px;
+    text-align: justify;
+}
+
+.music-box {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    border-width: 5px;
+    /* need to center align items in container */
+}
+
+.shop-box {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    color: #693288;
+    padding-top: 20px;
+    text-align: center;
+    /* need to center align items in container */
+}
+
+.event-box {
+    border-radius: 10px;
+    margin: 20px 10px 20px 10px;
+    max-width: 30%; /* this prevents the padding from causing an overlap */
+    /* need to center align items in container */
+}
+
+/* Images */
+
+.headshot {
+    max-height: 300px;
+    max-width: 100%;
+}
+
+/* Text and Links */
+
+.index-box h2 {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.profile-box h2 {
+    font-weight: 400;
+    letter-spacing: 3px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.profile-box p {
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.music-thumb {
+    height: 300px;
+}
+
+.music-thumb img {
+    border-radius: 10px;
+    height: 200px;
+    margin: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.music-thumb h2 {
+    border-radius: 5px;
+    color: #693288;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.song-heading:hover {
+    color: #f2f2f2;
+    background-color: #693288;
+    text-decoration: none;
+}
+
+.music-links-violet {
+    word-spacing: 30px;
+    text-align: center;
+}
+
+.music-links-violet li a i {
+    font-size: 30px;
+    color: #693288;
 }
 
 /* Shop */
 
-#shop-container {
-  background: url("../images/backgrounds/diamond-gun.png") no-repeat center
-    center;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-}
-
-.shop-title {
-  background-color: #f2f2f2;
-}
-
-.shop-title h1 {
-  color: #333333;
-  padding-bottom: 20px;
-  padding-top: 20px;
-  text-align: center;
-}
-
 .checkout {
-  background-color: #f2f2f2;
-  padding-bottom: 20px;
-  padding-right: 80px;
-  padding-top: 20px;
-  text-align: right;
+    background-color: #f2f2f2;
+    padding-bottom: 20px;
+    padding-right: 80px;
+    padding-top: 20px;
+    text-align: right;
 }
 
 .fa-cart-arrow-down {
-  color: #333333;
-  font-size: 40px;
-}
-
-.shop-box {
-  background-color: #f2f2f2;
-  border-radius: 10px;
-  color: #333333;
-  margin: 10px;
-    max-width: 30%; /* this prevents the padding from causing an overlap */
-  padding-top: 20px;
-  text-align: center;
-    /* need to center align items in container */
+    color: #693288;
+    font-size: 40px;
 }
 
 .shop-box h2,
 h3 {
-  font-size: 30px;
-  font-weight: 400;
-  letter-spacing: 3px;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  text-align: center;
-  text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .shop-box h3 {
-  font-size: 14px;
-  font-weight: 300;
-  text-transform: none;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: none;
 }
 
 .shop-box p {
-  color: #333333;
-  font-size: 14px;
-  padding: 10px;
-  text-align: justify;
+    color: #693288;
+    font-size: 14px;
+    padding: 10px;
+    text-align: justify;
 }
 
 .shop-box img {
-  border-radius: 10px;
-  height: 200px;
+    border-radius: 10px;
+    max-height: 200px;
+    max-width: 100%;
 }
 
 .shop-link {
-  border-radius: 15px;
-  color: #333333;
-  font-size: 30px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 10px;
-  text-align: center;
+    border-radius: 15px;
+    color: #693288;
+    font-size: 30px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    text-align: center;
 }
 
 .shop-link:hover {
-  background-color: #333333;
-  color: #f2f2f2;
-  font-size: 28px;
+    background-color: #693288;
+    color: #f2f2f2;
+    font-size: 28px;
 }
 
 /* Shows */
 
-#event-container {
-  background: url("../images/backgrounds/diamond-gun.png") no-repeat center
-    center;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  /* need to center align items in container */
-}
-
-.live-title,
-.contact-title {
-  background-color: #333333;
-}
-
-.live-title h1,
-.contact-title h1 {
-  color: #f2f2f2;
-  padding-bottom: 20px;
-  padding-top: 20px;
-  text-align: center;
-}
-
-.event-box {
-  background-color: #333333;
-  border-radius: 10px;
-  margin: 20px 10px 20px 10px;
-    max-width: 30%; /* this prevents the padding from causing an overlap */
-  /* need to center align items in container */
-}
-
 .event-box h2,
 .event-box h3 {
-  color: #f2f2f2;
-  font-size: 30px;
-  font-weight: 400;
-  letter-spacing: 3px;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  text-align: center;
-  text-transform: uppercase;
+    color: #f2f2f2;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .event-box h3 {
-  font-size: 14px;
-  font-weight: 300;
+    font-size: 14px;
+    font-weight: 300;
 }
 
 .event-link-row {
-  text-align: center;
-  word-spacing: 30px;
-  padding-bottom: 10px;
+    text-align: center;
+    word-spacing: 30px;
+    padding-bottom: 10px;
 }
 
 .event-link {
-  color: #f2f2f2;
-  font-size: 30px;
-  padding-right: 10px;
+    color: #f2f2f2;
+    font-size: 30px;
+    padding-right: 10px;
 }
 
 /* Media Queries */
 
 @media (max-width: 575px) {
-  .header-index,
-  .header-about,
-  .header-contact,
-  .header-music,
-  .header-shop,
-  .header-shows {
-    background: url("../images/icons/text-narrow.png") no-repeat center center;
-  }
-  .social-links {
-    word-spacing: 15px; /* fits links on single row */
-  }
+    .header-index,
+    .header-about,
+    .header-contact,
+    .header-music,
+    .header-shop,
+    .header-shows {
+        background: url("../images/icons/text-narrow.png") no-repeat center center;
+    }
 
-  .credits, .credits-about, .credits-music {
-    font-size: 10px;
-    text-align: center; /* center-align for mobile */
-  }
+    .profile-box {
+        max-width: 90%;
+    }
 
-  .mail-list-form,
-.mail-list-about-form,
-.mail-list-music-form {
-  text-align: center;
-}
+    .event-box {
+        max-width: 90%;
+    }
 
-.music-thumb {
-    height: 150px;
-    width: 150px; /* makes thumbnail 150px and padding bigger on each image for mobile devices */
-    padding: 30px 30px 30px 30px;
-  }
+    .index-box {
+        max-width: 90%;
+    }
 
-  .event-box h2,
-  .event-box h3,
-  .event-link-row {
-    text-align: center; /* center-align for mobile */
-  }
+    .music-box {
+        max-width: 90%;
+    }
+
+    .shop-box {
+        max-width: 90%;
+    }
+
+    .profile-box {
+        max-width: 90%;
+    }
+
+    .social-links {
+       word-spacing: 15px; /* fits links on single row */
+    }
+
+    .credits {
+        font-size: 10px;
+        text-align: center; /* center-align for mobile */
+    }
+
+    .mail-list-form {
+        text-align: center;
+    }
+
+    .music-thumb {
+        height: 150px;
+        width: 150px; /* makes thumbnail 150px and padding bigger on each image for mobile devices */
+        padding: 30px 30px 30px 30px;
+    }
+
+    .event-box h2,
+    .event-box h3,
+    .event-link-row {
+        text-align: center; /* center-align for mobile */
+    }
 }
