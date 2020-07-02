@@ -1,10 +1,20 @@
 # Weight Bearer
 
-Welcome to my user-centric front-end development milestone project (MS1 for short). For this project I chose to create a website for a friend's band. The band is called Weight Bearer, a metal band based in Lancashire, England.
+Welcome to my user-centric front-end development milestone project (MS1 for short). For this project I chose to create a [website[(https://kiehozero.github.io/weightbearer/)] for a friend's band. The band is called Weight Bearer, a metal band based in Lancashire, England.
  
 ## UX
 
 I've created a website which centralises resources that would otherwise be spread across a number of social media websites. The band currently uses Bandcamp for hosting and selling music, Spotify and YouTube for streaming and Facebook for publicity and events. I've retained full links to these pages but included the ability to listen and download music direct from the website.
+
+### Styling Decisions
+
+I used the follow hex colours, selecting using [Pixlr](https://www.pixlr.com):
+
+- #f2f2f2 is an off-white colour that is used in the band's monochrome diamond icon;
+
+- #333333 is an off-black colour that is used in the band's monochrome diamond icon;
+
+- #693288 is a shade of purple taht is used in the band's colour diamond icon. I also created a version of the band's font logo to match this colour using Pixlr.
 
 ### User Stories
 
