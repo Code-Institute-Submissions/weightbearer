@@ -38,9 +38,12 @@ body {
 }
 
 .navbar {
-    background-color: #f2f2f2;
+    background-color: rgba(0,0,0,0.2);
+    /* background-color: #f2f2f2; */
     height: 60px;
     position: fixed;
+    padding: 0;
+    word-spacing: 4px;
     width: 100%;
 }
 
@@ -53,23 +56,39 @@ body {
     text-align: center;
 }
 
-.nav-link {
+.nav-link-light,
+.nav-link-dark {
     border-radius: 10px;
-    Color: #693288;
+    color: #693288;
     font-weight: 500;
     font-size: 18px;
     letter-spacing: 6px;
+    padding: 6px;
     text-transform: uppercase;
 }
 
-.nav-link:hover {
+.nav-link-dark {
+    color: #f2f2f2;
+}
+
+.nav-link-light:hover,
+.nav-link-dark:hover {
     /* Taken from the CI Resume Walkthrough */
     background-color: #693288;
     color: #f2f2f2;
+    font-weight: 600;
     transition: all 0.15s ease;
     -moz-transition: all 0.15s ease;
     -webkit-transition: all 0.15s ease;
     -o-transition: all 0.15s ease;
+}
+
+.nav-link-dark:hover {
+    background-color: #f2f2f2;
+    color: #693288;
+}
+
+a:hover {
     text-decoration: none;
 }
 
@@ -318,6 +337,7 @@ body {
 .song-heading:hover {
     color: #f2f2f2;
     background-color: #693288;
+    font-weight: 600;
     text-decoration: none;
 }
 
