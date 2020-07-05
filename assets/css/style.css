@@ -171,29 +171,29 @@ body {
 /* Footer */
 
 .footer {
-  background-color: #693288;
-  color: #f2f2f2;
-  font-size: 14px;
-  letter-spacing: 2px;
-  padding-top: 15px;
+    background-color: #693288;
+    color: #f2f2f2;
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding-top: 15px;
 }
 
 .inline-block {
-  display: inline-block;
+    display: inline-block;
 }
 
 .credits {
-  font-size: 12px;
-  text-align: left;
+    font-size: 12px;
+    text-align: left;
 }
 
 .credits a {
-  color: #f2f2f2;
-  text-decoration: none;
+    color: #f2f2f2;
+    text-decoration: none;
 }
 
 .mail-list-form {
-  text-align: right;
+    text-align: right;
 }
 
 .mail-list-button {
@@ -202,14 +202,14 @@ body {
 }
 
 .social-links {
-  word-spacing: 30px;
-  text-align: center;
+    word-spacing: 30px;
+    text-align: center;
 }
 
 .social-links li a i {
-  font-size: 30px;
-  color: #f2f2f2;
-  text-align: center;
+    font-size: 30px;
+    color: #f2f2f2;
+    text-align: center;
 }
 
 /* Content Boxes */
@@ -346,7 +346,7 @@ body {
 }
 
 .shop-box h2,
-h3 {
+.shop-box h3 {
     font-size: 30px;
     font-weight: 400;
     letter-spacing: 3px;
@@ -435,27 +435,11 @@ h3 {
         background: url("../images/icons/text-narrow.png") no-repeat center center;
     }
 
-    .profile-box {
-        max-width: 90%;
-    }
-
-    .event-box {
-        max-width: 90%;
-    }
-
-    .index-box {
-        max-width: 90%;
-    }
-
-    .music-box {
-        max-width: 90%;
-    }
-
+    .event-box,
+    .index-box,
+    .music-box,
+    .profile-box,
     .shop-box {
-        max-width: 90%;
-    }
-
-    .profile-box {
         max-width: 90%;
     }
 
