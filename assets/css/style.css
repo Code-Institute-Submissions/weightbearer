@@ -231,7 +231,6 @@ body {
 
 .profile-box {
     border-radius: 20px;
-    text-align: justify;
 }
 
 .music-box {
@@ -280,6 +279,7 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
     font-size: 24px;
+    text-align: center;
     text-transform: uppercase;
 }
 
@@ -287,6 +287,7 @@ body {
     font-size: 16px;
     padding-left: 10px;
     padding-right: 10px;
+    text-align: justify;
 }
 
 .music-thumb {
@@ -441,6 +442,22 @@ body {
     .profile-box,
     .shop-box {
         max-width: 90%;
+    }
+
+    .profile-box img {
+        height: 200px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .profile-box h2 {
+        font-size: 24px;
+    }
+
+    .profile-box p {
+        font-size: 12px;
     }
 
     .social-links {
