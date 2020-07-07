@@ -61,7 +61,6 @@ body {
 
 .nav-link-light,
 .nav-link-dark {
-    border-radius: 10px;
     color: #693288;
     font-weight: 500;
     font-size: 18px;
@@ -115,11 +114,7 @@ a:hover {
 
 .navbar-toggler {
     border: 0;
-    paddning: 0;
-}
-
-.navbar-toggler-icon {
-    color: #693288;
+    padding: 0;
 }
 
 /* Containers */
