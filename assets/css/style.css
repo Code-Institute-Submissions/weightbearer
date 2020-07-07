@@ -13,20 +13,19 @@ body {
 .header-music,
 .header-shop,
 .header-shows {
-    background: url("../images/banners/text-line-narrow.png") no-repeat center
+    background: url("../images/banners/banner-text-line-new.jpg") no-repeat center
     center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     border-radius: 0px;
-    clear: both;
     display: block;
     height: 35vh;
 }
 
 .header-about {
-    background: url("../images/banners/banner-head-col.jpg") no-repeat center
+    background: url("../images/banners/banner-head-col.png") no-repeat center
     center;
 }
 
@@ -37,12 +36,16 @@ body {
     /* needs to stretch vertically and shrink horizontally */
 }
 
+/* Navigation */
+
 .navbar {
     background-color: rgba(0,0,0,0.2);
-    /* background-color: #f2f2f2; */
+    border: 0;
     height: 60px;
+    justify-content: space-between;
+    margin-bottom: 0;
     position: fixed;
-    padding: 0;
+    padding-right: 10px;
     word-spacing: 4px;
     width: 100%;
 }
@@ -88,6 +91,15 @@ body {
     color: #693288;
 }
 
+.active-light {
+    background-color:#693288;
+    color: #f2f2f2;  
+}
+.active-dark {
+    background-color:#f2f2f2;
+    color: #693288;
+}
+
 a:hover {
     text-decoration: none;
 }
@@ -97,9 +109,17 @@ a:hover {
     padding-left: 0;
     padding-right: 0;
     position: sticky;
-    top: 0;
     width: 100vw;
     z-index: 1;
+}
+
+.navbar-toggler {
+    border: 0;
+    paddning: 0;
+}
+
+.navbar-toggler-icon {
+    color: #693288;
 }
 
 /* Containers */
@@ -167,24 +187,6 @@ a:hover {
 #shop-container .row { /* This centers all boxes within the row. */
     display: flex;
     justify-content: center;
-}
-
-/* Page Title Banners */
-
-.section-banner {
-    background-color: #693288;
-    color: #f2f2f2;
-    font-size: 42px;
-    letter-spacing: 5px;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.section-banner h1 {
-    font-weight: 600;
-    vertical-align: center;
 }
 
 /* Footer */
@@ -446,14 +448,32 @@ a:hover {
 
 /* Media Queries */
 
-@media (max-width: 575px) {
+@media (min-width: 576px) and (max-width: 900px) { /* alternate styling for tablet devices */
     .header-index,
     .header-about,
     .header-contact,
     .header-music,
     .header-shop,
     .header-shows {
-        background: url("../images/icons/text-narrow.png") no-repeat center center;
+        background: url("../images/icons/text-stack.png") no-repeat center center;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        border-radius: 0px;
+        display: block;
+        height: 35vh;
+    }
+}
+
+@media (max-width: 575px) { /* alternate styling for mobile devices */
+    .header-index,
+    .header-about,
+    .header-contact,
+    .header-music,
+    .header-shop,
+    .header-shows {
+        background: none;
     }
 
     .event-box,

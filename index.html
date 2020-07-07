@@ -30,23 +30,34 @@
 <body>
     <header>
         <div class="nav-container">
-            <nav class="navbar navbar-expand-sm navbar-fixed-top">
+            <nav class="navbar navbar-expand-md">
                 <a href="index.html" class="navbar-brand">
                     <img src="./assets/images/icons/text-narrow-693288.png">
                 </a>
+                <button 
+                    class="navbar-toggler ml-auto"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbardrop"
+                    aria-controls="navbardrop"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+            <div class="collapse navbar-collapse" id="navbardrop">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a href="about.html" class="nav-link-light">About</a></li>
-                    <li class="nav-item"><a href="music.html" class="nav-link-light">Music</a></li>
-                    <li class="nav-item"><a href="shop.html" class="nav-link-light">Shop</a></li>
-                    <li class="nav-item"><a href="shows.html" class="nav-link-light">Shows</a></li>
-                    <li class="nav-item"><a href="contact.html" class="nav-link-light">Contact</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link nav-link-light">About</a></li>
+                    <li class="nav-item"><a href="music.html" class="nav-link nav-link-light">Music</a></li>
+                    <li class="nav-item"><a href="shop.html" class="nav-link nav-link-light">Shop</a></li>
+                    <li class="nav-item"><a href="shows.html" class="nav-link nav-link-light">Shows</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link nav-link-light">Contact</a></li>
                 </ul>
             </nav>
         </div>
 
-        <div class="container-fluid header-index d-none d-md-block">
+        <div class="container-fluid header-index d-sm-block">
         </div>
-
     </header>
 
     <section>

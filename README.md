@@ -28,7 +28,7 @@ A wireframe for this project is included in the repository, with [desktop](https
 
 ## Features
 
-###Existing Features
+### Existing Features
 
 - Index - The landing page includes a short biography of the band, as well as prominent links to music, a shop and a diary of live events, in line with the main user stories;
 - Music - Contains links to each of the band's releases so far. I've included the album artwork for each as a thumbnail, which is inspired by the presentation style used by Spotify and Bandcamp, focusing primarily on individual songs;
@@ -80,6 +80,11 @@ In addition, you should mention in this section how your project looks and works
 You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
 
 If this section grows too long, you may want to split it off into a separate file and link to it from here.
+
+- got the heading banner fix from staring at the style rules on the Metallica website and seeing how their background images reacted to display size changes
+- testing of all external links, social media, mp3s, etc.
+- integrity of all images
+- testing on multiple devices and browsers
 
 ## Deployment
 
