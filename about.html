@@ -30,27 +30,28 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-sm navbar-fixed-top">
+        <nav class="navbar navbar-expand-md navbar-light">
             <a href="index.html" class="navbar-brand">
                 <img src="./assets/images/icons/text-narrow-f2f2f2.png">
             </a>
 
             <button 
-                class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbardrop" aria-controls="navbardrop" aria-expanded="false" aria-label="Toggle navigation">
+                class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbardropAbout" aria-controls="navbardropAbout" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a href="about.html" class="nav-link nav-link-dark active-dark">About</a></li>
-                <li class="nav-item"><a href="music.html" class="nav-link nav-link-dark">Music</a></li>
-                <li class="nav-item"><a href="shop.html" class="nav-link nav-link-dark">Shop</a></li>
-                <li class="nav-item"><a href="shows.html" class="nav-link nav-link-dark">Shows</a></li>
-                <li class="nav-item"><a href="contact.html" class="nav-link nav-link-dark">Contact</a></li>
-            </ul>
+            <div class="collapse navbar-collapse" id="navbardropAbout">
+                <ul class="navbar-nav ml-auto">
+                   <li class="nav-item"><a href="about.html" class="nav-link nav-link-dark active-dark">About</a></li>
+                   <li class="nav-item"><a href="music.html" class="nav-link nav-link-dark">Music</a></li>
+                   <li class="nav-item"><a href="shop.html" class="nav-link nav-link-dark">Shop</a></li>
+                   <li class="nav-item"><a href="shows.html" class="nav-link nav-link-dark">Shows</a></li>
+                   <li class="nav-item"><a href="contact.html" class="nav-link nav-link-dark">Contact</a></li>
+               </ul>
+            </div>
         </nav>
 
-
-        <div class="container-fluid header-about d-none d-md-block">
+        <div class="container-fluid header-about d-sm-block">
         </div>
     </header>
 
@@ -95,7 +96,7 @@
         <!--Footer shell taken from Code Institute resume mini-project.-->
         <div class="row footer">
             <div class="col-sm-12 col-md-4">
-                <p class="inline-block credits">
+                <p class="credits">
 					All music copyright of Weight Bearer<br>
 					Graphic design by <a href="https://www.instagram.com/secretindustries/" target="_blank">Secret
 						Industries</a><br>
