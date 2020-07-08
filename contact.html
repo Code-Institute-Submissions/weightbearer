@@ -30,7 +30,7 @@
     
     
     <header>
-    
+
         <!--This navbar design is taken from the example contained in Boostrap's official navbar documentation-->
         <nav class="navbar navbar-expand-md navbar-light">
             <a href="index.html" class="navbar-brand">
@@ -59,9 +59,40 @@
     </header>
 
     <section>
+        <!-- This contact form is taken from the Code Institute Resume walkthrough project, then augmented with
+        radio button code from the W3schools entry on radio buttons.-->
         <div class="container-fluid" id="contact-container">
             <div class="row">
-                <div class="col-sm-12">
+                <div class="col-sm-12 bg-color-contact-right contact-box">
+                    <h3 class="contact-heading uppercase text-center">
+                    Got a question for us?
+                    </h3>
+
+                    <div class="center-form">
+                        <form>
+                            <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required/>
+                            <input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email" required/>
+                            <input type="text" name="subject" id="subject" class="form-control" placeholder="Subject" required/>
+                            <textarea rows="5" name="querysummary" id="querysummary" class="form-control" placeholder="Type your request here" required>
+                            </textarea>
+                            <label>Query Type:</label>
+                            <input type="radio" id="press" name="press" value="Press">
+                            <label for="press">Press</label>
+                            <input type="radio" id="label" name="label" value="Label">
+                            <label for="label">Label</label>
+                            <input type="radio" id="fan" name="fan" value="Fan">
+                            <label for="fan">fan</label>
+                            <input type="Radio" id="other" name="other" value="Other">
+                            <label for="other">fan</label>
+              <div class="form-row text-center">
+                <div class="col">
+                  <button type="submit" class="btn btn-secondary">
+                    Send
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
                     <form>Name
                     E-mail
                     Subject
@@ -71,6 +102,20 @@
                 </div>
             </div>
         </div>
+
+<section class="container-fluid">
+    <!--This form is taken from the Code Institute Resume walkthrough 
+    project, with some tweaks added in.-->
+      <div class="row">
+        <div class="col bg-color-contact-right">
+          <h3 class="contact-heading uppercase text-center">
+            Got a question for us?
+          </h3>
+
+        </div>
+      </div>
+    </section>
+
     </section>
 
     <footer class="container-fluid">
