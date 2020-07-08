@@ -60,48 +60,61 @@
 
     <section>
         <div class="container-fluid" id="index-container">
-            <div class="row">
-                <div class="col-sm-12 index-box">
-                    <h2>Biography here</h2>
-                    <p>Welcome to the official Weight Bearer website. Formed in 2019 from the ashes of The Coriolis Effect and Deathtrip.</p>
+        <!--The frame for this section is taken from the Nesting section of Bootstrap's documentation on grid layouts
+        and allows for the banner to sit alone with the news items below it, but for the two sections to be the same width-->
+        <div class="row">
+            <div class="col-sm-12 justify-content-around index-banner">
+                <h1 class="d-none d-sm-block">Welcome to the official Weight Bearer website</h1>
+                <p>Formed in 2019 from the ashes of The Coriolis Effect and Deathtrip, and featuring current and former members of Lethal Minds and Azrael, Weight Bearer forge a soundtrack to these bleak times from raging hardcore, savage death metal and soaring post-metal.</p>
+            </div>
+            <div class="col-sm-12 justify-content-between news-box">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 align-items-md-baseline index-box">
+                        <h2>Watch the Collapse out now!</h2>
+                        <img src="./assets/images/albumart/watch-the-collapse.jpg" alt="Watch the Collapse Album Artwork">
+                        <p>Our debut album Watch the Collapse is now available on all major digital streaming platforms. Click below to listen on your preferred platform.</p>
+                        <ul class="list-inline music-links-f2f2f2">
+                            <li class="list-inline-item">
+                                <a href="https://weightbeareruk.bandcamp.com/album/watch-the-collapse"
+                                    target="_blank"><i class="fa fa-bandcamp" aria-hidden="true"></i><span class="sr-only">Bandcamp</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://open.spotify.com/album/7cAZly75QMyYOSWluP15Kg"
+                                    target="_blank"><i class="fa fa-spotify" aria-hidden="true"></i><span class="sr-only">Spotify</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.youtube.com/playlist?list=OLAK5uy_kHPFSJU5pFKzjCvtXYtlbLLYxsxV-3x88"
+						            target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i><span class="sr-only">YouTube</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                
+                    <div class="col-sm-12 col-md-6 align-items-md-baseline index-box">
+                        <h2>Ireland tour announced!</h2>
+                        <a href="shows.html">
+                            <p>We have just announced a run of shows during autumn, including two nights in Ireland, subject to ongoing CoVid-19 restrictions. Click here to find a live show near you!</p>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 align-items-md-baseline index-box">
+                        <h2>Merch Update</h2>
+                        <a href="shows.html">
+                             <p>To celebrate the release of our debut record we have put together some merchandise designed by Secret Industries. Click here to purchase a physical copy of our new record or shop our range of merchandise.</p>
+                        </a>
+                    </div>
                 </div>
-                <div class="col-sm-12 index-box">
-                    <h2>Watch the Collapse out now!</h2>
-                    <img src="./assets/images/albumart/watch-the-collapse.jpg" alt="Watch the Collapse Album Artwork">
-                    <p>Our debut album Watch the Collapse is now available on all major digital streaming platforms. Click below to listen on your preferred platform.</p>
-                    <ul class="list-inline music-links-f2f2f2">
-                        <li class="list-inline-item">
-                            <a href="https://weightbeareruk.bandcamp.com/album/watch-the-collapse"
-                                target="_blank"><i class="fa fa-bandcamp" aria-hidden="true"></i><span class="sr-only">Bandcamp</span>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="https://open.spotify.com/album/7cAZly75QMyYOSWluP15Kg"
-                                target="_blank"><i class="fa fa-spotify" aria-hidden="true"></i><span class="sr-only">Spotify</span>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="https://www.youtube.com/watch?v=J0ab4UVblBg"
-								target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i><span class="sr-only">YouTube</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-sm-12 index-box">
-                    <h2>Ireland tour announced!</h2>
-                    <a href="shows.html">
-                        <p>We have just announced a run of shows during autumn, including two nights in Ireland, subject to ongoing CoVid-19 restrictions. Click here to find a live show near you!</p>
-                    </a>
-                </div>
-                <div class="col-sm-12 index-box">
-                    <h2>Merch Update</h2>
-                    <a href="shows.html">
-                        <p>To celebrate the release of our debut record we have put together some merchandise designed by Secret Industries. Click here to purchase a physical copy of our new record or shop our range of merchandise.</p>
-                    </a>
-                </div>
-                <div class="col-sm-12 index-box">
-                    <h2>Press here</h2>
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 justify-content-around index-banner">
+                <h2>The Press Room</h2>
+                <p><a href="https://toiletovhell.com/free-flush-vol-1/"><img src="https://toiletovhell.com/wp-content/uploads/2017/05/logo.svg" alt="Toilet of Hell Logo" class="press-thumb"></a>The lads over at Toilet ov Hell recently gave us this glowing review, show them some support!</p>
+                <br>
+                <p><a href="https://musipediaofmetal.blogspot.com/2020/01/reviews-haunt-envy-weight-bearer-ryte.html?m=1"><img src="https://3.bp.blogspot.com/--TL9XHGbTK8/XmfujKgBGAI/AAAAAAAABMU/PVWHC5bskjsPeKNYig468PNOVwkkZ6fRQCK4BGAYYCw/s1030/MoM.jpg" alt="Musipedia Logo" class="press-thumb"></a>Musipedia of Metal gave the new record Watch the Collapse a spin and had some good things to say!</p>
                 </div>
             </div>
         </div>

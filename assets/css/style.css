@@ -57,11 +57,14 @@ body {
 }
 
 .nav-item {
+    border-radius: 5px;
     text-align: center;
 }
 
 .nav-link-light,
-.nav-link-dark {
+.nav-link-dark,
+.active-light,
+.active-dark {
     color: #693288;
     font-weight: 500;
     font-size: 18px;
@@ -70,11 +73,13 @@ body {
     text-transform: uppercase;
 }
 
-.nav-link-dark {
+.nav-link-dark,
+.active-dark {
     color: #f2f2f2;
 }
 
 .navbar-light .navbar-nav .nav-link {
+    /* this level of specificity overrides the colour styling from Bootstrap's classes */
     color: #f2f2f2;
 }
 
@@ -82,7 +87,7 @@ body {
     color: #693288;
 }
 
-.navbar-light .nav-link-light a :hover,
+.navbar-light .nav-link-light a:hover,
 .navbar-light .nav-link-dark a:hover {
     /* Taken from the CI Resume Walkthrough */
     background-color: #693288;
@@ -94,16 +99,17 @@ body {
     -o-transition: all 0.15s ease;
 }
 
-.nav-link-dark:hover {
+.navbar-light .nav-link-dark a:hover {
     background-color: #f2f2f2;
     color: #693288;
 }
 
-.active-light {
-    background-color:#693288;
-    color: #f2f2f2;  
+.navbar-light .active-light {
+    background-color:#693288; /* background only appears on active link */
+    color: #f2f2f2;
 }
-.active-dark {
+
+.navbar-light .active-dark {
     background-color:#f2f2f2;
     color: #693288;
 }
@@ -236,13 +242,25 @@ a:hover {
     margin: 10px;
     max-width: 30%; /* this prevents the padding from causing an overlap on devices using col-md-4*/
     text-align: center;
-    /* need to center align items in container */
+}
+
+.index-banner,
+.news-box {
+    background-color: #693288;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    max-width: 95%;
 }
 
 .index-box {
-    border-radius: 5px;
-    padding-top: 10px;
-    text-align: justify;
+    border-radius: 10px;
+}
+
+.news-box { 
+    /* item is at the same hierarchical level as the main welcome banner, it  
+    just needs to be transparent to display seperation between nested items */
+    background-color: transparent;
+
 }
 
 .profile-box {
@@ -281,12 +299,38 @@ a:hover {
 
 /* Text and Links */
 
+.index-banner h1 {
+    color: #f2f2f2;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 6px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.index-banner p {
+    color: #f2f2f2;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    padding: 10px;
+    text-align: justify;
+}
+
+.index-banner h2,
 .index-box h2 {
+    color: #f2f2f2;
     font-size: 18px;
     font-weight: 400;
     letter-spacing: 3px;
+    padding-top: 10px;
     text-align: center;
     text-transform: uppercase;
+}
+
+.index-box a {
+    color: #f2f2f2;
+    text-align: justify;
 }
 
 .profile-box h2 {
@@ -306,11 +350,20 @@ a:hover {
     text-align: justify;
 }
 
+.press-thumb {
+    display: inline-block;
+    float: left;
+    height: 80px;
+    margin-right: 10px;
+    width: 80px;
+}
+
 .music-thumb {
     height: 300px;
 }
 
-.music-thumb img {
+.music-thumb img, /* controls album artwork on music.html */
+.index-box img {  /* controls album artwork on index.html */
     border-radius: 10px;
     height: 200px;
     margin: 10px;
@@ -338,14 +391,20 @@ a:hover {
     text-decoration: none;
 }
 
-.music-links-violet {
+.music-links-693288,
+.music-links-f2f2f2 {
     word-spacing: 30px;
     text-align: center;
 }
 
-.music-links-violet li a i {
+.music-links-693288 li a i { /* links displayed on music.html */
     font-size: 30px;
     color: #693288;
+}
+
+.music-links-f2f2f2 li a i { /* links displayed on index.html */
+    font-size: 30px;
+    color: #f2f2f2;
 }
 
 /* Shop */
