@@ -247,8 +247,10 @@ a:hover {
 }
 
 .index-banner {
-    border-radius: 10px;
-    max-width: 98%;
+    border-radius: 5px;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .index-box {
@@ -296,9 +298,33 @@ a:hover {
     max-width: 100%;
 }
 
-/* Text and Links */
+.music-box img, /* controls album artwork on music.html */
+.index-box img, /* controls album artwork on index.html */
+.shop-box img {  /* controls album artwork on shop.html */
+    border-radius: 10px;
+    height: 250px;
+    margin: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
 
-.index-banner h1 {
+.shop-box img {
+    max-height: 200px;
+    max-width: 100%;
+}
+
+.press-thumb {
+    display: inline-block;
+    float: left;
+    height: 80px;
+    margin-right: 10px;
+    vertical-align: center;
+    width: 80px;
+}
+
+/* Index Text and Links */
+
+.index-banner h1 { /* h1 only features on the Welcome banner */
     color: #f2f2f2;
     font-size: 40px;
     font-weight: 600;
@@ -309,14 +335,14 @@ a:hover {
 
 .index-banner p {
     color: #f2f2f2;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 300;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     padding: 10px;
     text-align: justify;
 }
 
-.index-banner h2,
+.index-banner h2, /* h2 only features on the Press section */
 .index-box h2 {
     color: #f2f2f2;
     font-size: 18px;
@@ -349,22 +375,7 @@ a:hover {
     text-align: justify;
 }
 
-.press-thumb {
-    display: inline-block;
-    float: left;
-    height: 80px;
-    margin-right: 10px;
-    width: 80px;
-}
-
-.music-box img, /* controls album artwork on music.html */
-.index-box img {  /* controls album artwork on index.html */
-    border-radius: 10px;
-    height: 200px;
-    margin: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
+/* Music Text and Links */
 
 .music-box h2 {
     border-radius: 5px;
@@ -402,7 +413,7 @@ a:hover {
     color: #f2f2f2;
 }
 
-/* Shop */
+/* Shop Text and Links */
 
 .checkout {
     background-color: #f2f2f2;
@@ -441,12 +452,6 @@ a:hover {
     text-align: justify;
 }
 
-.shop-box img {
-    border-radius: 10px;
-    max-height: 200px;
-    max-width: 100%;
-}
-
 .shop-link {
     border-radius: 15px;
     color: #693288;
@@ -464,7 +469,7 @@ a:hover {
     font-size: 28px;
 }
 
-/* Shows */
+/* Shows Text and Links */
 
 .event-box h2,
 .event-box h3 {
@@ -527,11 +532,14 @@ a:hover {
 
     .event-box,
     .index-box,
-    .index-banner,
     .music-box,
     .profile-box,
     .shop-box {
         max-width: 90%;
+    }
+
+    .index-banner {
+        max-width: 100%;
     }
 
     .profile-box img {
