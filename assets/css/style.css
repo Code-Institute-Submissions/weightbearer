@@ -513,9 +513,14 @@ a:hover {
     padding-bottom: 15px;
 }
 
+.form-control {
+    /* adds spacing to Bootstrap class */
+    margin: 3px;
+}
+
 /* Media Queries */
 
-@media (min-width: 576px) and (max-width: 900px) { /* alternate styling for tablet devices */
+@media (min-width: 576px) and (max-width: 900px) {/* alternate styling for tablet devices */
     .header-index,
     .header-about,
     .header-contact,
