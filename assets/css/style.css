@@ -132,6 +132,8 @@ a:hover {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #bio-container {
@@ -236,20 +238,17 @@ a:hover {
 
 /* Content Boxes */
 
-.event-box, .index-box, .music-box, .profile-box, .shop-box {
+.event-box, .index-banner, .index-box, .music-box, .profile-box, .shop-box {
     background-color: #693288;
     color: #f2f2f2;
-    margin: 10px;
-    max-width: 30%; /* this prevents the padding from causing an overlap on devices using col-md-4*/
+    margin: 5px;
+    max-width: 30%;
     text-align: center;
 }
 
-.index-banner,
-.news-box {
-    background-color: #693288;
+.index-banner {
     border-radius: 10px;
-    margin-bottom: 10px;
-    max-width: 95%;
+    max-width: 98%;
 }
 
 .index-box {
@@ -271,6 +270,7 @@ a:hover {
     background-color: #f2f2f2;
     border-radius: 10px;
     border-width: 5px;
+    justify-content: center;
     /* need to center align items in container */
 }
 
@@ -286,7 +286,6 @@ a:hover {
 .event-box {
     border-radius: 10px;
     margin: 20px 10px 20px 10px;
-    max-width: 30%; /* this prevents the padding from causing an overlap */
     /* need to center align items in container */
 }
 
@@ -358,11 +357,7 @@ a:hover {
     width: 80px;
 }
 
-.music-thumb {
-    height: 300px;
-}
-
-.music-thumb img, /* controls album artwork on music.html */
+.music-box img, /* controls album artwork on music.html */
 .index-box img {  /* controls album artwork on index.html */
     border-radius: 10px;
     height: 200px;
@@ -371,7 +366,7 @@ a:hover {
     padding-bottom: 5px;
 }
 
-.music-thumb h2 {
+.music-box h2 {
     border-radius: 5px;
     color: #693288;
     font-size: 18px;
@@ -516,7 +511,6 @@ a:hover {
         -o-background-size: cover;
         border-radius: 0px;
         display: block;
-        height: 35vh;
     }
 }
 
@@ -528,10 +522,12 @@ a:hover {
     .header-shop,
     .header-shows {
         background: none;
+        height: 60px; /* removes banner but replaces with a blank space to sit behind navbar */
     }
 
     .event-box,
     .index-box,
+    .index-banner,
     .music-box,
     .profile-box,
     .shop-box {
@@ -567,7 +563,7 @@ a:hover {
         text-align: center;
     }
 
-    .music-thumb {
+    .music-box img {
         height: 150px;
         width: 150px; /* makes thumbnail 150px and padding bigger on each image for mobile devices */
         padding: 30px 30px 30px 30px;
