@@ -62,9 +62,7 @@ body {
 }
 
 .nav-link-light,
-.nav-link-dark,
-.active-light,
-.active-dark {
+.active {
     color: #693288;
     font-weight: 500;
     font-size: 18px;
@@ -73,22 +71,17 @@ body {
     text-transform: uppercase;
 }
 
-.nav-link-dark,
-.active-dark {
-    color: #f2f2f2;
-}
-
 .navbar-light .navbar-nav .nav-link {
     /* this level of specificity overrides the colour styling from Bootstrap's classes */
     color: #f2f2f2;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
+    background-color: #f2f2f2;
     color: #693288;
 }
 
-.navbar-light .nav-link-light a:hover,
-.navbar-light .nav-link-dark a:hover {
+.navbar-light .nav-link-light a:hover {
     /* Taken from the CI Resume Walkthrough */
     background-color: #693288;
     color: #f2f2f2;
@@ -99,18 +92,20 @@ body {
     -o-transition: all 0.15s ease;
 }
 
-.navbar-light .nav-link-dark a:hover {
-    background-color: #f2f2f2;
-    color: #693288;
-}
-
-.navbar-light .active-light {
+.navbar-light .active {
     background-color:#693288; /* background only appears on active link */
     color: #f2f2f2;
 }
 
-.navbar-light .active-dark {
-    background-color:#f2f2f2;
+.navbar-light .navbar-nav .nav-link.active {
+    color: #f2f2f2;
+}
+
+.navbar-light .navbar-nav .nav-link.active:hover {
+    /* .nav-link.active appears to be a Bootstrap class that was causing me an immense amount of distress in getting
+    this navbar to style correctly. Once I realised there was no whitespace in the middle of the tag (I thought it was
+    just a hierachy issue, I realised it is coloured using rgb, which is how I knew I hadn't written it (I've used hex
+    for font colouring all the way through. I write this lengthy comment only to express my joy at finally solving this! */
     color: #693288;
 }
 
