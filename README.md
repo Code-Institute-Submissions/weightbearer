@@ -1,10 +1,10 @@
 # Weight Bearer
 
-Welcome to my user-centric front-end development milestone project (MS1 for short). For this project I chose to create a [website[(https://kiehozero.github.io/weightbearer/)] for a friend's band. The band is called Weight Bearer, a metal band based in Lancashire, England.
+Welcome to my user-centric front-end development milestone project (MS1 for short). For this project I chose to create a [website[(https://kiehozero.github.io/weightbearer/)] for a friend's band. The band is called Weight Bearer, a metal band based in Lancashire, England. Luckily for me the band actually wish to use this as their online home, so this project might technically count as my first (unpaid) commission!
  
 ## UX
 
-I've created a website which centralises resources that would otherwise be spread across a number of social media websites. The band currently uses Bandcamp for hosting and selling music, Spotify and YouTube for streaming and Facebook for publicity and events. I've retained full links to these pages but included the ability to listen and download music direct from the website.
+I've created a website which centralises resources that would otherwise be spread across a number of social media websites. The band currently uses Bandcamp for hosting and selling music, Spotify and YouTube for streaming and Facebook for publicity and events. I've retained full links to these s
 
 ### Styling Decisions
 
@@ -14,7 +14,7 @@ I used the follow hex colours, selecting using [Pixlr](https://www.pixlr.com):
 
 - #333333 is an off-black colour that is used in the band's monochrome diamond icon;
 
-- #693288 is a shade of purple taht is used in the band's colour diamond icon. I also created a version of the band's font logo to match this colour using Pixlr.
+- #693288 is a shade of purple that is used in the band's colour diamond icon. I also created a version of the band's font logo to match this colour using Pixlr.
 
 ### User Stories
 
@@ -38,7 +38,10 @@ A wireframe for this project is included in the repository, with [desktop](https
 - Contact - A basic form that allows people to send a message to the band, as well as selecting the reason for enquiry.
 
 ### Features Left to Implement
-- I've included a dummy contact form and shop that will be fleshed out once I've completed the JavaScript module.
+- I've included a dummy contact form and shop that will be live once I've completed the JavaScript module. I have no doubt that completing that module will throw up a million ideas for this project, but I'll be using this README as a guide of what to get started on.
+- A really frustrating part of this project was in the effect of borders and margins on Bootstrap grids. I actually took a few days off because I was making zero progress towards my goal, I had just lost all perspective and was in danger of stalling. Bootstrap is obviously a powerful and complex tool so I'd like to re-visit the main content of the index page once I'm more comfortable with how things work.
+- I'd like to include a live Instagram feed at the side of the home page just to break up the content.
+- After lots of pain and suffering causing by overwriting Bootstrap classes with my own CSS and the myriad issues this brings up, I'd like to conduct a review of my CSS styling to see if there are further efficiencies I can make with a better understanding of Bootstrap.
 
 ## Technologies Used
 
@@ -81,6 +84,7 @@ You should also mention in this section any interesting bugs or problems you dis
 
 If this section grows too long, you may want to split it off into a separate file and link to it from here.
 
+- one early problem I noticed was that photography and banners were loading when running inside the Gitpod 8080 server, but then were showing the alt tag once I loaded from Github pages. I found that this was an navigation issue, namely adding one point instead of two to the internal address that locates the storage location.
 - got the heading banner fix from staring at the style rules on the Metallica website and seeing how their background images reacted to display size changes
 - testing of all external links, social media, mp3s, etc.
 - integrity of all images
@@ -88,20 +92,23 @@ If this section grows too long, you may want to split it off into a separate fil
 
 ## Deployment
 
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
+I used GitHub as the host for this project, and Gitpod to write it, using just one branch. I took part in the Code Institute hackathon while completing this project, learning a lot about the benefit of branches from the more experienced students in our time. In hindsight I would have used branches from the start of this project but I already had the major structure and feel of the site completed at that point.
+
+All of the images used on the website except for the logos for the external press links are hosted within the Gitpod repository. I had initially included mp3s on the music page so users could listen to the band directly within their browser, but my mentor advised me that this adds a large amount of content to the page for not much benefit, especially because I've linked to Spotify, YouTube and Bandcamp.
 
 In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
 - Different values for environment variables (Heroku Config Vars)?
 - Different configuration files?
-- Separate git branch?
 
-In addition, if it is not obvious, you should also describe how to run your code locally.
+In addition, if it is not obvious, you should also describe how to run your code locally. ADDING CLONING INFORMATION HERE
 
 
 ## Credits
 
 ### Content
-- Header and footer formats borrowed from CI course content
+- The header and footer formats were borrowed from existing CI course content, namely the Whiskey Drop and resume projects respectively.
+- Bootstrap's [navbar documentation]https://getbootstrap.com/docs/4.0/components/navbar/ helped me break down and customise the navigation classes they have.
+- W3Schools' guide on [Bootstrap's media class]](https://www.w3schools.com/Bootstrap/bootstrap_media_objects.asp) allowed me to get out of a CSS hole of my own making.
 
 ### Media
 - Photography and graphic designs were provided directly by the band, with the graphics being designed by [Secret Industries](https://www.instagram.com/secretindustries/).
@@ -109,4 +116,4 @@ In addition, if it is not obvious, you should also describe how to run your code
 ### Acknowledgements
 
 - The band themselves had mentioned needing a website previously so I'm happy they let me use them as a guinea pig in putting this together.
-- My mentor [Precious](https://github.com/precious-ijege) helped this project seem a bit more manageable after I'd come up with my initial ideas. He pointed out what he'd expect using his experience of similar previous projects, and it was good to get that professional perspective after I'd researched other band websites of varying quality.
+- My mentor [Precious](https://github.com/precious-ijege) helped this project seem a bit more manageable after I'd come up with my initial ideas. He pointed out what he'd expect using his experience of similar previous projects, and it was good to get that professional perspective after I'd researched other band websites of varying qualities.
