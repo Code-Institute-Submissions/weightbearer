@@ -90,15 +90,18 @@ If this section grows too long, you may want to split it off into a separate fil
 - testing of all external links, social media, mp3s, etc.
 - integrity of all images (https://www.w3schools.com/cssref/css_units.asp), I changed img widths from px to % values to prevent images from overflowing on smaller screensizes
 - testing on multiple devices and browsers
+- footers did not initially align properly, this was due to the mailing list column being set to col-sm-12 col-lg-4 and the other two columns being col-sm-12 col-md-4
+- go through github commit history to find issues
 - mention big comment that helped solve navbar font colouring issue
+- test whole site (wider screen, use work monitors as well) without developer tools and on different browsers
 - To do:
 --- about: header alignment
 --- contact: 
---- index: 
+--- index: press room border match issues, needs more uniform picture styling?
 --- music: header alignment, album art sizing on mobile could be bigger;
---- shop: img stretch on desktop and mobile?
---- shows: text overflow on tablet text
---- site: footer on tablets, footer credits on mobiles (seems to be music page only?), navbar on mobiles.
+--- shop: img stretch on desktop and mobile;
+--- shows: text overflow on tablet text;
+--- site: footers could be aligned vertically (justify-content-around?), navbar on mobiles.
 
 ## Deployment
 
