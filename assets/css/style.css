@@ -530,6 +530,20 @@ a:hover {
     margin: 3px;
 }
 
+.btn-secondary {
+    /* overrides default Bootstrap colouring */
+    color: #693288;
+    background-color: #f2f2f2;
+    border-color: #f2f2f2;
+}
+
+.btn-secondary:hover {
+    /* overrides default Bootstrap colouring */
+    color: #f2f2f2;
+    background-color: #693288;
+    border-color: #f2f2f2;
+}
+
 /* Media Queries */
 
 @media (min-width: 576px) and (max-width: 900px) {/* alternate styling for tablet devices */
