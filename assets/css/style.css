@@ -255,6 +255,7 @@ a:hover {
 .contact-box {
     border-radius: 10px;
     max-width: 90%;
+    padding-bottom: 15px;
 }
 
 .news-box { 
@@ -587,6 +588,7 @@ a:hover {
 
     .profile-box p {
         font-size: 12px;
+        padding-top: 12px;
     }
 
     .social-links {
