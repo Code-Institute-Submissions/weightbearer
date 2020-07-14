@@ -1,10 +1,11 @@
 # Weight Bearer
 
-Welcome to my user-centric front-end development milestone project (MS1 for short). For this project I chose to create a [website[(https://kiehozero.github.io/weightbearer/)] for a friend's band. The band is called Weight Bearer, a metal band based in Lancashire, England. Luckily for me the band actually wish to use this as their online home, so this project might technically count as my first (unpaid) commission!
+Welcome to my user-centric front-end development milestone project. For this project I chose to create a [website](https://kiehozero.github.io/weightbearer/)] for a friend's band. The band is called Weight Bearer, a metal band based in Lancashire, England. Luckily for me the band actually wish to use this as their online home, so this project might technically count as my first (unpaid) commission!
  
+
 ## UX
 
-I've created a website which centralises resources that would otherwise be spread across a number of social media websites. The band currently uses Bandcamp for hosting and selling music, Spotify and YouTube for streaming and Facebook for publicity and events. I've retained full links to these s
+I've created a website which centralises resources that would otherwise be spread across a number of social media websites. The band currently uses Bandcamp for hosting and selling music, Spotify and YouTube for streaming and Facebook for publicity and events.
 
 ### Styling Decisions
 
@@ -26,6 +27,7 @@ I used the follow hex colours, selecting using [Pixlr](https://www.pixlr.com):
 
 A wireframe for this project is included in the repository, with [desktop](https://github.com/kiehozero/weightbearer/blob/master/wireframes/Weight%20Bearer%20Desktop%20Wireframes.pdf), [tablet](https://github.com/kiehozero/weightbearer/blob/master/wireframes/Weight%20Bearer%20Tablet%20Wireframes.pdf) and [mobile](https://github.com/kiehozero/weightbearer/blob/master/wireframes/Weight%20Bearer%20Mobile%20Wireframes.pdf) versions.
 
+
 ## Features
 
 ### Existing Features
@@ -41,11 +43,10 @@ A wireframe for this project is included in the repository, with [desktop](https
 - I've included a dummy contact form and shop that will be live once I've completed the JavaScript module. I have no doubt that completing that module will throw up a million ideas for this project, but I'll be using this README as a guide of what to get started on.
 - A really frustrating part of this project was in the effect of borders and margins on Bootstrap grids. I actually took a few days off because I was making zero progress towards my goal, I had just lost all perspective and was in danger of stalling. Bootstrap is obviously a powerful and complex tool so I'd like to re-visit the main content of the index page once I'm more comfortable with how things work.
 - I'd like to include a live Instagram feed at the side of the home page just to break up the content.
-- After lots of pain and suffering causing by overwriting Bootstrap classes with my own CSS and the myriad issues this brings up, I'd like to conduct a review of my CSS styling to see if there are further efficiencies I can make with a better understanding of Bootstrap.
+- After lots of pain and suffering causing by overwriting Bootstrap classes with my own CSS and the myriad issues this brings up (see testing section!), I'd like to conduct a review of my CSS styling to see if there are further efficiencies I can make with a better understanding of Bootstrap.
+
 
 ## Technologies Used
-
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
 
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)
 
@@ -89,6 +90,15 @@ If this section grows too long, you may want to split it off into a separate fil
 - testing of all external links, social media, mp3s, etc.
 - integrity of all images (https://www.w3schools.com/cssref/css_units.asp), I changed img widths from px to % values to prevent images from overflowing on smaller screensizes
 - testing on multiple devices and browsers
+- mention big comment that helped solve navbar font colouring issue
+- To do:
+--- about: header alignment
+--- contact: 
+--- index: 
+--- music: header alignment, album art sizing on mobile could be bigger;
+--- shop: img stretch on desktop and mobile?
+--- shows: text overflow on tablet text
+--- site: footer on tablets, footer credits on mobiles (seems to be music page only?), navbar on mobiles.
 
 ## Deployment
 
@@ -106,9 +116,10 @@ In addition, if it is not obvious, you should also describe how to run your code
 ## Credits
 
 ### Content
-- The header and footer formats were borrowed from existing CI course content, namely the Whiskey Drop and resume projects respectively.
-- Bootstrap's [navbar documentation]https://getbootstrap.com/docs/4.0/components/navbar/ helped me break down and customise the navigation classes they have.
-- W3Schools' guide on [Bootstrap's media class]](https://www.w3schools.com/Bootstrap/bootstrap_media_objects.asp) allowed me to get out of a CSS hole of my own making.
+- The header and footer formats were borrowed from existing CI course content, namely the Whiskey Drop and resume projects respectively;
+- Bootstrap's [navbar documentation](https://getbootstrap.com/docs/4.0/components/navbar/) helped me break down and customise the navigation classes they have;
+- W3Schools' guide on [Bootstrap's media class]](https://www.w3schools.com/Bootstrap/bootstrap_media_objects.asp) allowed me to get out of a CSS hole of my own making;
+- {MakeAReadMe(https://www.makeareadme.com/) is an excellent resource for putting together a readme;
 
 ### Media
 - Photography and graphic designs were provided directly by the band, with the graphics being designed by [Secret Industries](https://www.instagram.com/secretindustries/).
