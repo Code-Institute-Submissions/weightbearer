@@ -87,7 +87,7 @@ If this section grows too long, you may want to split it off into a separate fil
 - one early problem I noticed was that photography and banners were loading when running inside the Gitpod 8080 server, but then were showing the alt tag once I loaded from Github pages. I found that this was an navigation issue, namely adding one point instead of two to the internal address that locates the storage location.
 - got the heading banner fix from staring at the style rules on the Metallica website and seeing how their background images reacted to display size changes
 - testing of all external links, social media, mp3s, etc.
-- integrity of all images
+- integrity of all images (https://www.w3schools.com/cssref/css_units.asp), I changed img widths from px to % values to prevent images from overflowing on smaller screensizes
 - testing on multiple devices and browsers
 
 ## Deployment
