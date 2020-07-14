@@ -390,23 +390,16 @@ a:hover {
 
 /* Music Text and Links */
 
-.music-box h2 {
+.music-box .song-heading {
     border-radius: 5px;
     color: #693288;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: 3px;
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
     text-transform: uppercase;
-    text-decoration: none;
-}
-
-.song-heading:hover {
-    color: #f2f2f2;
-    background-color: #693288;
-    font-weight: 600;
     text-decoration: none;
 }
 
