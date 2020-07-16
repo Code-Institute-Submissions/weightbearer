@@ -13,12 +13,6 @@ body {
 .header-music,
 .header-shop,
 .header-shows {
-    background: url("../images/banners/banner-purple.png") no-repeat center
-    center;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     border-radius: 0px;
     display: block;
     height: 35vh;
@@ -26,11 +20,13 @@ body {
 }
 
 .header-about,
-.header-shop, {
+.header-index,
+.header-shop {
     background: url("../images/banners/banner-purple-on-black.png") no-repeat center
     center;
 }
 
+.header-contact,
 .header-music,
 .header-shows {
     background: url("../images/banners/banner-grey-on-black.png") no-repeat center
@@ -122,8 +118,23 @@ a:hover {
 
 /* Containers */
 
-#index-container {
+#bio-container,
+#music-container,
+#shop-container {
+    /* using purple background here as these pages have the darker headers */
     background: url("../images/icons/diamond-purple.png") no-repeat center
+    center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+#contact-container,
+#event-container,
+#index-container {
+    /* using the grey background on this container so it doesn't clash with the header */
+    background: url("../images/icons/diamond-purple-on-grey.png") repeat center
     center;
     background-size: cover;
     -webkit-background-size: cover;
@@ -131,52 +142,6 @@ a:hover {
     -o-background-size: cover;
     padding-top: 10px;
     padding-bottom: 10px;
-}
-
-#bio-container {
-    background: url("../images/icons/diamond-purple.png") no-repeat center
-    center;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-}
-
-#contact-container {
-     background: url("../images/icons/diamond-purple.png") no-repeat center
-    center;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-}
-
-#music-container {
-    background: url("../images/icons/diamond-purple.png") no-repeat center
-    center;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-color: rgba(0, 0, 0, 0.1);
-}
-
-#shop-container {
-    background: url("../images/icons/diamond-purple.png") no-repeat center
-    center;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-}
-
-#event-container {
-    background: url("../images/icons/diamond-purple.png") no-repeat center
-    center;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
 }
 
 #bio-container .row,
@@ -535,13 +500,9 @@ a:hover {
 
 /* Media Queries */
 
-@media (min-width: 576px) and (max-width: 900px) {/* alternate styling for tablet devices */
-    .header-index,
-    .header-contact,
-    .header-music,
-    .header-shop,
-    .header-shows {
-        height: 25vh;
+@media (min-width: 576px) and (max-width: 768px) {/* alternate styling for tablet devices */
+    .navbar {
+        height: 90px; /* allows navbar to remain aligned once navbar-expand-md is active */
     }
 }
 
@@ -552,8 +513,7 @@ a:hover {
     .header-music,
     .header-shop,
     .header-shows {
-        /* background: none; */
-        height: 90px; /* removes banner but replaces with a blank space to sit behind navbar which is same height (see below) */
+        height: 90px; /* enables banner to sit behind navbar which is same height (see below) */
     } 
 
     .event-box,
