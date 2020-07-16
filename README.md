@@ -21,9 +21,11 @@ I used the follow hex colours, selecting using [Pixlr](https://www.pixlr.com):
 
 - LISTEN: Users who want to listen to the band's music can either listen using the mp3s on the Music page or re-direct to Spotify, Bandcamp or YouTube.
 
+- WATCH: User who want to see the band live can view the Shows page, which takes users to a Facebook event, ticket page and venue location for each show. The shows currently listed are dummies as shows are currently prohibited due to Covid-19 regulations.
+
 - PURCHASE: Users who wish to purchase band merchandise can visit the Shop page. This page is a dummy until I have completed the Javascript module.
 
-- CONTACT: Users who need to contact the band can complete the form contact form and specify their request.
+- CONTACT: Users who need to contact the band can complete the form contact form and specify their request, as well as their .
 
 A wireframe for this project is included in the repository, with [desktop](https://github.com/kiehozero/weightbearer/blob/master/wireframes/Weight%20Bearer%20Desktop%20Wireframes.pdf), [tablet](https://github.com/kiehozero/weightbearer/blob/master/wireframes/Weight%20Bearer%20Tablet%20Wireframes.pdf) and [mobile](https://github.com/kiehozero/weightbearer/blob/master/wireframes/Weight%20Bearer%20Mobile%20Wireframes.pdf) versions.
 
@@ -42,6 +44,7 @@ A wireframe for this project is included in the repository, with [desktop](https
 ### Features Left to Implement
 - I've included a dummy contact form and shop that will be live once I've completed the JavaScript module. I have no doubt that completing that module will throw up a million ideas for this project, but I'll be using this README as a guide of what to get started on.
 - A really frustrating part of this project was in the effect of borders and margins on Bootstrap grids. I actually took a few days off because I was making zero progress towards my goal, I had just lost all perspective and was in danger of stalling. Bootstrap is obviously a powerful and complex tool so I'd like to re-visit the main content of the index page once I'm more comfortable with how things work.
+- My initial wireframe included a slightly more advanced grid system than I ultimately implemented, a grid of four windows and a separate side-column. I'd like to bring this in to save other content being hidden at the bottom of the page; ideally there would be no scrolling required on the home page unless being viewed on a mobile device.
 - I'd like to include a live Instagram feed at the side of the home page just to break up the content.
 - After lots of pain and suffering causing by overwriting Bootstrap classes with my own CSS and the myriad issues this brings up (see testing section!), I'd like to conduct a review of my CSS styling to see if there are further efficiencies I can make with a better understanding of Bootstrap.
 
@@ -67,26 +70,26 @@ A wireframe for this project is included in the repository, with [desktop](https
 
 ## Testing
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+>>> In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
 
-Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
+>>> Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
 
 For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
 
-1. Contact form:
+>>> 1. Contact form:
     1. Go to the "Contact Us" page
     2. Try to submit the empty form and verify that an error message about the required fields appears
     3. Try to submit the form with an invalid email address and verify that a relevant error message appears
     4. Try to submit the form with all inputs valid and verify that a success message appears.
 
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
+>>> In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
+>>> You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
 
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+>>> If this section grows too long, you may want to split it off into a separate file and link to it from here.
 
 - one early problem I noticed was that photography and banners were loading when running inside the Gitpod 8080 server, but then were showing the alt tag once I loaded from Github pages. I found that this was an navigation issue, namely adding one point instead of two to the internal address that locates the storage location.
-- got the heading banner fix from staring at the style rules on the Metallica website and seeing how their background images reacted to display size changes
+- I spent an awfully long time trying to incorporate banners onto each page. The banners I was using contained lots of text (i.e. the band name) or photography, and I had toyed around with making multiple size versions of images to account for different screensizes. Ultimately I gave up and figured it was hopeless until I realised that the band had sent my plenty of very hi-res (3000px wide!) variations of their logo, so I cropped these using Pixlr and they made the perfect banners. In hindsight I probably wasted more time on this issue than pretty much any other, but I will have to look at it as a very useful, but painful, lesson. 
 - testing of all external links, social media, mp3s, etc.
 - integrity of all images (https://www.w3schools.com/cssref/css_units.asp), I changed img widths from px to % values to prevent images from overflowing on smaller screensizes
 - testing on multiple devices and browsers
@@ -95,13 +98,14 @@ If this section grows too long, you may want to split it off into a separate fil
 - mention big comment that helped solve navbar font colouring issue
 - test whole site (wider screen, use work monitors as well) without developer tools and on different browsers
 - To do:
---- about: header alignment
+--- about: 
 --- contact: 
---- index: press room border match issues, needs more uniform picture styling?
---- music: header alignment, album art sizing on mobile could be bigger;
+--- index: press room border match issues, press room header not displaying properly with web dev tools on, needs more uniform picture styling?
+--- music: album art sizing on mobile could be bigger;
 --- shop: img stretch on desktop and mobile;
 --- shows: text overflow on tablet text;
---- site: footers could be aligned vertically (justify-content-around?), navbar on mobiles.
+--- site: footers could be aligned vertically (justify-content-around?), navbar-dropdown.
+
 
 ## Deployment
 
@@ -109,20 +113,20 @@ I used GitHub as the host for this project, and Gitpod to write it, using just o
 
 All of the images used on the website except for the logos for the external press links are hosted within the Gitpod repository. I had initially included mp3s on the music page so users could listen to the band directly within their browser, but my mentor advised me that this adds a large amount of content to the page for not much benefit, especially because I've linked to Spotify, YouTube and Bandcamp.
 
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
+>>> In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
 - Different values for environment variables (Heroku Config Vars)?
 - Different configuration files?
 
-In addition, if it is not obvious, you should also describe how to run your code locally. ADDING CLONING INFORMATION HERE
+>>> In addition, if it is not obvious, you should also describe how to run your code locally. ADDING CLONING INFORMATION HERE
 
 
 ## Credits
 
 ### Content
-- The header and footer formats were borrowed from existing CI course content, namely the Whiskey Drop and resume projects respectively;
+- The header and footer formats were borrowed from existing CI course content, namely the Whiskey Drop and resume projects;
 - Bootstrap's [navbar documentation](https://getbootstrap.com/docs/4.0/components/navbar/) helped me break down and customise the navigation classes they have;
 - W3Schools' guide on [Bootstrap's media class]](https://www.w3schools.com/Bootstrap/bootstrap_media_objects.asp) allowed me to get out of a CSS hole of my own making;
-- {MakeAReadMe(https://www.makeareadme.com/) is an excellent resource for putting together a readme;
+- [MakeAReadMe](https://www.makeareadme.com/) is an excellent resource for putting together a readme, although I largely used the [Code Institute readme template](https://github.com/Code-Institute-Solutions/readme-template).
 
 ### Media
 - Photography and graphic designs were provided directly by the band, with the graphics being designed by [Secret Industries](https://www.instagram.com/secretindustries/).
