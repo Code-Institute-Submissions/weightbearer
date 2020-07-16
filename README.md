@@ -113,10 +113,6 @@ I used GitHub as the host for this project, and Gitpod to write it, using just o
 
 All of the images used on the website except for the logos for the external press links are hosted within the Gitpod repository. I had initially included mp3s on the music page so users could listen to the band directly within their browser, but my mentor advised me that this adds a large amount of content to the page for not much benefit, especially because I've linked to Spotify, YouTube and Bandcamp.
 
->>> In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
-- Different values for environment variables (Heroku Config Vars)?
-- Different configuration files?
-
 >>> In addition, if it is not obvious, you should also describe how to run your code locally. ADDING CLONING INFORMATION HERE
 
 
