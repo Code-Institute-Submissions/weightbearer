@@ -13,7 +13,7 @@ body {
 .header-music,
 .header-shop,
 .header-shows {
-    background: url("../images/banners/banner-text-line-new.jpg") no-repeat center
+    background: url("../images/banners/banner-purple.png") no-repeat center
     center;
     background-size: cover;
     -webkit-background-size: cover;
@@ -22,16 +22,18 @@ body {
     border-radius: 0px;
     display: block;
     height: 35vh;
+    width: 100vw;
 }
 
-.header-about {
-    background: url("../images/banners/banner-head-col.png") no-repeat center
+.header-about,
+.header-shop, {
+    background: url("../images/banners/banner-purple-on-black.png") no-repeat center
     center;
 }
 
 .header-music,
 .header-shows {
-    background: url("../images/banners/banner-head-bw.png") no-repeat center
+    background: url("../images/banners/banner-grey-on-black.png") no-repeat center
     center;
     /* needs to stretch vertically and shrink horizontally */
 }
@@ -535,18 +537,11 @@ a:hover {
 
 @media (min-width: 576px) and (max-width: 900px) {/* alternate styling for tablet devices */
     .header-index,
-    .header-about,
     .header-contact,
     .header-music,
     .header-shop,
     .header-shows {
-        background: url("../images/icons/text-stack.png") no-repeat center center;
-        background-size: cover;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        border-radius: 0px;
-        display: block;
+        height: 25vh;
     }
 }
 
@@ -557,9 +552,9 @@ a:hover {
     .header-music,
     .header-shop,
     .header-shows {
-        background: none;
-        height: 60px; /* removes banner but replaces with a blank space to sit behind navbar */
-    }
+        /* background: none; */
+        height: 90px; /* removes banner but replaces with a blank space to sit behind navbar which is same height (see below) */
+    } 
 
     .event-box,
     .index-box,
@@ -567,6 +562,10 @@ a:hover {
     .profile-box,
     .shop-box {
         max-width: 90%;
+    }
+
+    .navbar {
+        height: 90px;
     }
 
     .index-banner {
