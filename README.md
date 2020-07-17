@@ -96,7 +96,9 @@ For any scenarios that have not been automated, test the user stories manually a
 - footers did not initially align properly, this was due to the mailing list column being set to col-sm-12 col-lg-4 and the other two columns being col-sm-12 col-md-4
 - go through github commit history to find issues
 - mention big comment that helped solve navbar font colouring issue
-- test whole site (wider screen, use work monitors as well) without developer tools and on different browsers
+Clone: click green ‘Code’ button at the top of the repo and copy link, google the rest
+- test whole site (wider screen, use work monitors as well) without developer tools and on different browsers (Chrome, Huawei Mobile, Edge)
+
 - To do:
 --- about: footer on tablet view still unaligned
 --- contact: whitespace underneath footer on ipad view
