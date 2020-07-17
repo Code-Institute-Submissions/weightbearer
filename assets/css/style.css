@@ -504,6 +504,15 @@ a:hover {
 /* Media Queries */
 
 @media (min-width: 576px) and (max-width: 768px) {/* alternate styling for tablet devices */
+    .header-index,
+    .header-about,
+    .header-contact,
+    .header-music,
+    .header-shop,
+    .header-shows {
+        height: 30vw; /* enables banner to sit behind navbar which is same height (see below) */
+    } 
+
     .navbar {
         height: 90px; /* allows navbar to remain aligned once navbar-expand-md is active */
     }
