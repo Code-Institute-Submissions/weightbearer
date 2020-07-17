@@ -103,7 +103,7 @@ Clone: click green ‘Code’ button at the top of the repo and copy link, googl
 - test whole site (wider screen, use work monitors as well) without developer tools and on different browsers (Chrome, Huawei Mobile, Edge)
 
 - To do:
---- about: footer on tablet view still unaligned
+--- about: 
 --- contact: whitespace underneath footer on ipad view
 --- index: border match issues, press room align to left rather than centre, needs more uniform picture styling?
 --- music: 
