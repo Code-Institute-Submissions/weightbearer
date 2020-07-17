@@ -112,9 +112,12 @@ a:hover {
     text-decoration: none;
 }
 
-.navbar-toggler {
-    border: 0;
-    margin: 0px 0px 0px 10px;
+.navbar-dark .navbar-toggler {
+    /* colouring for Font Awesome icon that has replaced the Bootstrap class in the span.
+    Addition of navbar-dark allows specificity to override settings from that class */
+    color: #f2f2f2;
+    font-size: 32px;
+    margin-right: 15px;
 }
 
 /* Containers */
