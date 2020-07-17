@@ -25,10 +25,7 @@ body {
 .header-shop {
     background: url("../images/banners/banner-purple-on-black.png") no-repeat center
     center;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    /* left out any background-size information because I think the headers looks better this way */
 }
 
 .header-contact,
@@ -36,10 +33,6 @@ body {
 .header-shows {
     background: url("../images/banners/banner-grey-on-black.png") no-repeat center
     center;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
 }
 
 /* Navigation */
