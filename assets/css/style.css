@@ -560,6 +560,18 @@ a:hover {
         height: 90px;
     }
 
+    #navbarAbout,
+    #navbarContact,
+    #navbarIndex,
+    #navbarMusic,
+    #navbarShop,
+    #navbarShows {
+        /* this overrides the transparent background-color of the navbar,
+        useless once it has to drop down over multiple colour selections */
+        background-color: #000000;
+        width: 50%;
+    }    
+
     .index-banner {
         max-width: 100%;
     }
