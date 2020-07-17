@@ -107,7 +107,7 @@ Clone: click green ‘Code’ button at the top of the repo and copy link, googl
 --- music: 
 --- shop: 
 --- shows: text overflow on tablet text;
---- site: navbar-dropdown
+--- site: navbar-dropdown colouring
 
 
 ## Deployment

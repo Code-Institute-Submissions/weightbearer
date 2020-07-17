@@ -126,8 +126,7 @@ a:hover {
 #music-container,
 #shop-container {
     /* using purple background here as these pages have the darker headers */
-    background: url("../images/icons/diamond-purple.png") no-repeat center
-    center;
+    background: url("../images/icons/diamond-purple.png") no-repeat center center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -138,8 +137,7 @@ a:hover {
 #event-container,
 #index-container {
     /* using the grey background on this container so it doesn't clash with the header */
-    background: url("../images/icons/diamond-purple-on-grey.png") repeat center
-    center;
+    background: url("../images/icons/diamond-purple-on-grey.png") repeat center center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -153,7 +151,8 @@ a:hover {
 #event-container .row,
 #index-container .row,
 #music-container .row,
-#shop-container .row { /* This centers all boxes within the row. */
+#shop-container .row {
+    /* This centers all boxes within the row. */
     display: flex;
     justify-content: center;
 }
@@ -213,6 +212,7 @@ a:hover {
 .music-box,
 .profile-box,
 .shop-box {
+    /* This ensures that there is a reasonable level of styling across all content on the site */
     background-color: #693288;
     color: #f2f2f2;
     margin: 5px;
