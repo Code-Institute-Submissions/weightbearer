@@ -9,13 +9,13 @@ I've created a website which centralises resources that would otherwise be sprea
 
 ### Styling Decisions
 
-I used the follow hex colours, selecting using [Pixlr](https://www.pixlr.com):
+I used the following hex colours, selecting using [Pixlr](https://www.pixlr.com):
 
 - #f2f2f2 is an off-white colour that is used in the band's monochrome diamond icon;
 
-- #333333 is an off-black colour that is used in the band's monochrome diamond icon;
-
 - #693288 is a shade of purple that is used in the band's colour diamond icon. I also created a version of the band's font logo to match this colour using Pixlr.
+
+- For the lead font I chose Merriweather Sans as it most closely matched the font that the graphic designer commissioned by the band had used. This font only really worked in upper case, so I chose Poppins as a secondary font just for h3, p and span elements.
 
 ### User Stories
 
@@ -92,19 +92,19 @@ For any scenarios that have not been automated, test the user stories manually a
 - I spent an awfully long time trying to incorporate banners onto each page. The banners I was using contained lots of text (i.e. the band name) or photography, and I had toyed around with making multiple size versions of images to account for different screensizes. Ultimately I gave up and figured it was hopeless until I realised that the band had sent my plenty of very hi-res (3000px wide!) variations of their logo, so I cropped these using Pixlr and they made the perfect banners. In hindsight I probably wasted more time on this issue than pretty much any other, but I will have to look at it as a very useful, but painful, lesson. 
 - testing of all external links, social media, mp3s, etc.
 - integrity of all images (https://www.w3schools.com/cssref/css_units.asp), I changed img widths from px to % values to prevent images from overflowing on smaller screensizes
-- testing on multiple devices and browsers
+- testing on multiple devices and browsers, footers are still not working properly on Kindles but this is because they have a slightly wider screen (800px) than what Bootstrap classes are subdivided to
 - footers did not initially align properly, this was due to the mailing list column being set to col-sm-12 col-lg-4 and the other two columns being col-sm-12 col-md-4
 - go through github commit history to find issues
 - mention big comment that helped solve navbar font colouring issue
 - test whole site (wider screen, use work monitors as well) without developer tools and on different browsers
 - To do:
---- about: 
---- contact: 
---- index: press room border match issues, press room header not displaying properly with web dev tools on, needs more uniform picture styling?
---- music: album art sizing on mobile could be bigger;
---- shop: img stretch on desktop and mobile;
+--- about: footer on tablet view still unaligned
+--- contact: whitespace underneath footer on ipad view
+--- index: border match issues, needs more uniform picture styling?
+--- music: 
+--- shop: 
 --- shows: text overflow on tablet text;
---- site: footers could be aligned vertically (justify-content-around?), navbar-dropdown.
+--- site: navbar-dropdown
 
 
 ## Deployment
@@ -119,9 +119,10 @@ All of the images used on the website except for the logos for the external pres
 ## Credits
 
 ### Content
-- The header and footer formats were borrowed from existing CI course content, namely the Whiskey Drop and resume projects;
+- The header and footer formats were borrowed from existing CI course content, namely the [Whiskey Drop](https://github.com/kiehozero/WhiskeyDrop) and [resume](https://github.com/kiehozero/resume) projects. The links are my own versions of each project but are more or less identical to the walkthrough.
+- Social media icons are provided by [Font Awesome](https://fontawesome.com/), while the fonts themselves come from [Google Fonts](https://fonts.google.com/).
 - Bootstrap's [navbar documentation](https://getbootstrap.com/docs/4.0/components/navbar/) helped me break down and customise the navigation classes they have;
-- W3Schools' guide on [Bootstrap's media class]](https://www.w3schools.com/Bootstrap/bootstrap_media_objects.asp) allowed me to get out of a CSS hole of my own making;
+- W3Schools' guide on [Bootstrap's media class](https://www.w3schools.com/Bootstrap/bootstrap_media_objects.asp) allowed me to get out of a CSS hole of my own making in horizontally aligning pictures and text in the press section. I then had an issue of not being able to get the h2 above them to stay above it, but [Bootstrap Shuffle](https://bootstrapshuffle.com/classes/sizing/w-100) provided the class I needed to solve that;
 - [MakeAReadMe](https://www.makeareadme.com/) is an excellent resource for putting together a readme, although I largely used the [Code Institute readme template](https://github.com/Code-Institute-Solutions/readme-template).
 
 ### Media
