@@ -507,6 +507,23 @@ a:hover {
     .navbar {
         height: 90px; /* allows navbar to remain aligned once navbar-expand-md is active */
     }
+
+    .social-links {
+       word-spacing: 4px; /* fits links on single row */
+    }
+
+    .credits {
+        margin-bottom: 5px; /* reduces all top and bottom footer margins on tablet view to take up as little space as possible */
+        margin-top: 5px;
+        font-size: 10px;
+    }
+
+    .mail-list-button,
+    .mail-list-form {
+        font-size: 10px;
+        margin: 5px;
+        text-align: center;
+    }
 }
 
 @media (max-width: 575px) { /* alternate styling for mobile devices */
@@ -571,8 +588,7 @@ a:hover {
     }
 
     .music-box img {
-        height: 150px;
-        width: 150px; /* makes thumbnail 150px and padding bigger on each image for mobile devices */
+        width: 80%; /* makes album artwork thumbnail slightly smaller for mobile devices */
         padding: 30px 30px 30px 30px;
     }
 
