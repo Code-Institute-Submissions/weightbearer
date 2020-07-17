@@ -25,6 +25,10 @@ body {
 .header-shop {
     background: url("../images/banners/banner-purple-on-black.png") no-repeat center
     center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 
 .header-contact,
@@ -32,7 +36,10 @@ body {
 .header-shows {
     background: url("../images/banners/banner-grey-on-black.png") no-repeat center
     center;
-    /* needs to stretch vertically and shrink horizontally */
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 
 /* Navigation */
