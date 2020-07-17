@@ -5,7 +5,7 @@ Welcome to my user-centric front-end development milestone project. For this pro
 
 ## UX
 
-I've created a website which centralises resources that would otherwise be spread across a number of social media websites. The band currently uses Bandcamp for hosting and selling music, Spotify and YouTube for streaming and Facebook for publicity and events.
+I have created a website which centralises resources that would otherwise be spread across a number of social media websites. The band currently uses Bandcamp for hosting and selling music, Spotify and YouTube for streaming and Facebook for publicity and events.
 
 ### Styling Decisions
 
@@ -42,6 +42,7 @@ A wireframe for this project is included in the repository, with [desktop](https
 - Contact - A basic form that allows people to send a message to the band, as well as selecting the reason for enquiry.
 
 ### Features Left to Implement
+
 - I've included a dummy contact form and shop that will be live once I've completed the JavaScript module. I have no doubt that completing that module will throw up a million ideas for this project, but I'll be using this README as a guide of what to get started on.
 - A really frustrating part of this project was in the effect of borders and margins on Bootstrap grids. I actually took a few days off because I was making zero progress towards my goal, I had just lost all perspective and was in danger of stalling. Bootstrap is obviously a powerful and complex tool so I'd like to re-visit the main content of the index page once I'm more comfortable with how things work.
 - My initial wireframe included a slightly more advanced grid system than I ultimately implemented, a grid of four windows and a separate side-column. I'd like to bring this in to save other content being hidden at the bottom of the page; ideally there would be no scrolling required on the home page unless being viewed on a mobile device.
@@ -67,6 +68,7 @@ A wireframe for this project is included in the repository, with [desktop](https
 - [Pixlr](https://www.pixlr.com)
     - Pixlr is a great free software package that enabled me to quickly pick out hex colors and edit existing material that the band provided me with.
 
+- [W3 Validator]
 
 ## Testing
 
@@ -103,11 +105,11 @@ Clone: click green ‘Code’ button at the top of the repo and copy link, googl
 - To do:
 --- about: footer on tablet view still unaligned
 --- contact: whitespace underneath footer on ipad view
---- index: border match issues, needs more uniform picture styling?
+--- index: border match issues, press room align to left rather than centre, needs more uniform picture styling?
 --- music: 
 --- shop: 
 --- shows: text overflow on tablet text;
---- site: navbar-dropdown colouring
+--- site: mobile backgrounds too pixelated?
 
 
 ## Deployment

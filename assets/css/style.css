@@ -17,7 +17,7 @@ body {
     border-radius: 0px;
     display: block;
     height: 35vh;
-    width: 100vw;
+    width: 100%;
 }
 
 .header-about,
@@ -569,7 +569,6 @@ a:hover {
         /* this overrides the transparent background-color of the navbar,
         useless once it has to drop down over multiple colour selections */
         background-color: #000000;
-        width: 50%;
     }    
 
     .index-banner {
