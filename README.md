@@ -97,6 +97,7 @@ For any scenarios that have not been automated, test the user stories manually a
 - testing on multiple devices and browsers, footers are still not working properly on Kindles but this is because they have a slightly wider screen (800px) than what Bootstrap classes are subdivided to
 - footers did not initially align properly, this was due to the mailing list column being set to col-sm-12 col-lg-4 and the other two columns being col-sm-12 col-md-4
 - go through github commit history to find issues
+- background images were being stretched to fit the lengths of entire pages, this quick fix was provided by looking back at the Whiskey Drop project and noticing that fixing backgrounds looks much better
 - mention big comment that helped solve navbar font colouring issue
 Clone: click green ‘Code’ button at the top of the repo and copy link, google the rest
 - test whole site (wider screen, use work monitors as well) without developer tools and on different browsers (Chrome, Huawei Mobile, Edge)
