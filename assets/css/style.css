@@ -154,7 +154,6 @@ a:hover {
 #shop-container .row {
     /* This centers all boxes within the row. */
     display: flex;
-    display: -webkit-flex; /* added to allow flex to work in Safari as per https://www.w3schools.com/CSSref/pr_class_display.asp */
     justify-content: center;
 }
 
@@ -214,7 +213,7 @@ a:hover {
 .music-box,
 .profile-box,
 .shop-box {
-    /* This ensures that there is a reasonable level of styling across all content on the site */
+    /* This ensures that there is a reasonable level of styling consistency across all content on the site */
     background-color: #693288;
     color: #f2f2f2;
     margin: 5px;
@@ -508,14 +507,14 @@ a:hover {
 
 /* Media Queries */
 
-@media (min-width: 576px) and (max-width: 768px) {/* alternate styling for tablet devices */
+@media (min-width: 576px) and (max-width: 940px) {/* alternate styling for tablet devices */
     .header-index,
     .header-about,
     .header-contact,
     .header-music,
     .header-shop,
     .header-shows {
-        height: 30vw; /* enables banner to sit behind navbar which is same height (see below) */
+        height: 30vw;
     } 
 
     .navbar {
@@ -554,6 +553,7 @@ a:hover {
         height: 90px; /* enables banner to sit behind navbar which is same height (see below) */
     } 
 
+    .contact-box,
     .event-box,
     .index-box,
     .music-box,
