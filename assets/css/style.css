@@ -126,7 +126,7 @@ a:hover {
 #music-container,
 #shop-container {
     /* using purple background here as these pages have the darker headers */
-    background: url("../images/icons/diamond-purple.png") no-repeat center center;
+    background: url("../images/icons/diamond-purple.png") no-repeat center center fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -137,7 +137,7 @@ a:hover {
 #event-container,
 #index-container {
     /* using the grey background on this container so it doesn't clash with the header */
-    background: url("../images/icons/diamond-purple-on-grey.png") repeat center center;
+    background: url("../images/icons/diamond-purple-on-grey.png") repeat center center fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
