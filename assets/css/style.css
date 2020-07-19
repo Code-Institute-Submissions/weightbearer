@@ -536,7 +536,7 @@ a:hover {
     .mail-list-form {
         font-size: 10px;
         margin: 5px;
-        text-align: center;
+        text-align: right;
     }
 
     .event-box h2 {
