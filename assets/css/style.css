@@ -137,13 +137,13 @@ a:hover {
 #event-container,
 #index-container {
     /* using the grey background on this container so it doesn't clash with the header */
-    background: url("../images/icons/diamond-purple-on-grey.png") repeat center center fixed;
+    background: url("../images/icons/diamond-purple-on-grey.png") no-repeat center center fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    padding-top: 10px;
     padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 #bio-container .row,
