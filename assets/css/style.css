@@ -154,6 +154,7 @@ a:hover {
 #shop-container .row {
     /* This centers all boxes within the row. */
     display: flex;
+    display: -webkit-flex; /* added to allow flex to work in Safari as per https://www.w3schools.com/CSSref/pr_class_display.asp */
     justify-content: center;
 }
 
