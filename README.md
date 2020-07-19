@@ -73,9 +73,9 @@ A wireframe for this project is included in the repository, with [desktop](https
 
 >>> In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
 
->>> Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
-
 For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
+
+### User Stories
 
 >>> 1. Contact form:
     1. Go to the "Contact Us" page
@@ -83,24 +83,26 @@ For any scenarios that have not been automated, test the user stories manually a
     3. Try to submit the form with an invalid email address and verify that a relevant error message appears
     4. Try to submit the form with all inputs valid and verify that a success message appears.
 
->>> In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
-
->>> You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
 >>> If this section grows too long, you may want to split it off into a separate file and link to it from here.
 
-- one early problem I noticed was that photography and banners were loading when running inside the Gitpod 8080 server, but then were showing the alt tag once I loaded from Github pages. I found that this was an navigation issue, namely adding one point instead of two to the internal address that locates the storage location.
-- I spent an awfully long time trying to incorporate banners onto each page. The banners I was using contained lots of text (i.e. the band name) or photography, and I had toyed around with making multiple size versions of images to account for different screensizes. Ultimately I gave up and figured it was hopeless until I realised that the band had sent my plenty of very hi-res (3000px wide!) variations of their logo, so I cropped these using Pixlr and they made the perfect banners. In hindsight I probably wasted more time on this issue than pretty much any other, but I will have to look at it as a very useful, but painful, lesson. 
+### Bugfixes
+
+Given that this is the first website I've built without the use of guidance, there were inevitably going to be plenty of bugs for me to wrestle with. I was surprised at how many I was able to fix simply by editing code on the fly and re-loading, but a few proved more frustrating and required a visit to W3Schools, Bootstrap Shuffle or Stack Overflow, links to which can be found in the credits section below.
+
+- One early problem I noticed was that photography and banners were loading when running inside the Gitpod 8080 server, but then were showing the alt tag once I loaded from Github pages. I found that this was an navigation issue, namely adding one point instead of two to the internal address that locates the storage location. My mentor pointed this out when he loaded remotely from GitHub Pages, thus teaching me a valuable lesson about testing across devices and browsers!
+- I spent an awfully long time trying to incorporate banners onto each page. The banners I initially used contained lots of text (i.e. the band name) or photography, and I had toyed around with making multiple size versions of images to account for different screensizes. Ultimately I gave up and figured it was hopeless until I realised that the band had sent my plenty of very hi-res (3000px wide!) variations of their logo, so I cropped these using Pixlr and they made the perfect banners. In hindsight I probably wasted more time on this issue than pretty much any other, but I will have to look at it as a very useful, but painful, lesson. 
+- In the CSS stylesheet there is a long comment regarding navbar font colouring issues, whereby I spent far too much time trying to unpick the interactions and specificity between my own CSS and the code used to create Bootstrap classes. Ultimately I learnt that if in doubt, simply default to the Bootstrap class styling, and be mindful of adding your own styling to override Bootstrap elements without adding comments as it can become very confusing to try and work backwards without it.
 - I had a lot of trouble working out how to override the default colour of the drop-down menu button, but [Stack Overflow](https://stackoverflow.com/questions/42586729/bootstrap-4-change-hamburger-toggler-color#42587673) provided a solution in the way of replacing the Bootstrap class with a Font Awesome icon and styling this seperately, which enabled me to sidestep another round of unpicking Bootstrap class parameters.
-- testing of all external links, social media, mp3s, etc.
-- integrity of all images (https://www.w3schools.com/cssref/css_units.asp), I changed img widths from px to % values to prevent images from overflowing on smaller screensizes
-- testing on multiple devices and browsers, footers are still not working properly on Kindles but this is because they have a slightly wider screen (800px) than what Bootstrap classes are subdivided to
-- footers did not initially align properly, this was due to the mailing list column being set to col-sm-12 col-lg-4 and the other two columns being col-sm-12 col-md-4
-- go through github commit history to find issues
-- background images were being stretched to fit the lengths of entire pages, this quick fix was provided by looking back at the Whiskey Drop project and noticing that fixing backgrounds looks much better
-- mention big comment that helped solve navbar font colouring issue
+- On a related note, I had included the jQuery code for the drop-down meneus at the bottom of each html script as per the [Whiskey Drop](https://github.com/kiehozero/WhiskeyDrop) page, but Chrome's developer tools flagged this as technically incorrect, and that I should include it before the Bootstrap script at in the head of each page.
+- A visit to [W3Schools](https://www.w3schools.com/cssref/css_units.asp), allowed me to fix the problem of img elements overflowing on smaller devices. I changed img widths from px to % values, allowing these elements to be sized based on their parent elements, which were ultimately determined by the Bootstrap grid system.
+- A similar sizing issue affected the background images on each page's container stretching to the length of the page's content, which becomes a significant issue once you are on a mobile view with 13 col-sm-12 divs. Luckily this was a much quicker solution; I simply looked back at the code for the [Whiskey Drop](https://github.com/kiehozero/WhiskeyDrop) project and fixing the background.
+- All social media links and music links are functioning. I've also tested links from the events page, which are set to the specific location of each venue, although the event and ticket pages are currently linking only to the Ticketmaster and Facebook homepages as all gigs are cancelled until further notice due to Covid-19 restrictions.
+- I tested this site primarily on Firefox but also Chrome and Edge, taking advantage of the screen size options to test using iPad, Samsung Galaxy and Kindle Fire. I also tested the site on my own Huawei device. Once I start a new project I'll be working in Chrome as it seems to flag up errors (see jsQuery issue above) and is a bit stricter in enforcing code than Firefox. 
+W3Schools' guide on Bootstrap's [media class](https://www.w3schools.com/Bootstrap/bootstrap_media_objects.asp) allowed me to get out of a CSS hole of my own making in horizontally aligning pictures and text in the press section. I then had an issue of not being able to get the h2 above them to stay above it, but [Bootstrap Shuffle](https://bootstrapshuffle.com/classes/sizing/w-100) provided the class I needed to solve that
+- In terms of look and feel, the site is similar across all browsers. The tablet and desktop views are almost identical, while devices always drop into col-12 formatting. There were a couple of fixes that were required to get this up and running across multiple devices and browsers, most notably the jsQuery issue above. There were also some issues around how the mailing list form in the footers was floating. The social media links in the footer also started to crunch around the 930px mark so I just upped the max-width on my tablet-specific CSS. The only outstanding issue I have is that in tablet view there is a significant amount of whitespace beneath the footer of the contact page, which looks to be due to the 
+### Cloning
+
 Clone: click green ‘Code’ button at the top of the repo and copy link, google the rest
-- test whole site (wider screen, use work monitors as well) without developer tools and on different browsers (Chrome, Huawei Mobile, Edge)
 
 - To do:
 --- about: 
@@ -109,7 +111,7 @@ Clone: click green ‘Code’ button at the top of the repo and copy link, googl
 --- music: 
 --- shop: 
 --- shows: text overflow on tablet text;
---- site: mobile backgrounds too pixelated? e-mail input not floating right correctly on Chrome. Chrome issue re: jquery?
+--- site: 
 
 
 ## Deployment
@@ -127,7 +129,7 @@ All of the images used on the website except for the logos for the external pres
 - The header and footer formats were borrowed from existing CI course content, namely the [Whiskey Drop](https://github.com/kiehozero/WhiskeyDrop) and [resume](https://github.com/kiehozero/resume) projects. The links are my own versions of each project but are more or less identical to the walkthrough.
 - Social media icons are provided by [Font Awesome](https://fontawesome.com/), while the fonts themselves come from [Google Fonts](https://fonts.google.com/).
 - Bootstrap's [navbar documentation](https://getbootstrap.com/docs/4.0/components/navbar/) helped me break down and customise the navigation classes they have;
-- W3Schools' guide on [Bootstrap's media class](https://www.w3schools.com/Bootstrap/bootstrap_media_objects.asp) allowed me to get out of a CSS hole of my own making in horizontally aligning pictures and text in the press section. I then had an issue of not being able to get the h2 above them to stay above it, but [Bootstrap Shuffle](https://bootstrapshuffle.com/classes/sizing/w-100) provided the class I needed to solve that;
+- As mentioned about, W3Schools' guide on Bootstrap's [media class](https://www.w3schools.com/Bootstrap/bootstrap_media_objects.asp) and [Bootstrap Shuffle](https://bootstrapshuffle.com/classes/sizing/w-100) helped me better understand element positioning;
 - [MakeAReadMe](https://www.makeareadme.com/) is an excellent resource for putting together a readme, although I largely used the [Code Institute readme template](https://github.com/Code-Institute-Solutions/readme-template).
 
 ### Media
