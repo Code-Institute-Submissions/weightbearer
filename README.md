@@ -85,7 +85,7 @@ For any scenarios that have not been automated, test the user stories manually a
 
 >>> If this section grows too long, you may want to split it off into a separate file and link to it from here.
 
-### Bugfixes
+### Bug Fixes
 
 Given that this is the first website I've built without the use of guidance, there were inevitably going to be plenty of bugs for me to wrestle with. I was surprised at how many I was able to fix simply by editing code on the fly and re-loading, but a few proved more frustrating and required a visit to W3Schools, Bootstrap Shuffle or Stack Overflow, links to which can be found in the credits section below.
 
@@ -98,29 +98,28 @@ Given that this is the first website I've built without the use of guidance, the
 - A similar sizing issue affected the background images on each page's container stretching to the length of the page's content, which becomes a significant issue once you are on a mobile view with 13 col-sm-12 divs. Luckily this was a much quicker solution; I simply looked back at the code for the [Whiskey Drop](https://github.com/kiehozero/WhiskeyDrop) project and fixing the background.
 - All social media links and music links are functioning. I've also tested links from the events page, which are set to the specific location of each venue, although the event and ticket pages are currently linking only to the Ticketmaster and Facebook homepages as all gigs are cancelled until further notice due to Covid-19 restrictions.
 - I tested this site primarily on Firefox but also Chrome and Edge, taking advantage of the screen size options to test using iPad, Samsung Galaxy and Kindle Fire. I also tested the site on my own Huawei device. Once I start a new project I'll be working in Chrome as it seems to flag up errors (see jsQuery issue above) and is a bit stricter in enforcing code than Firefox. 
-W3Schools' guide on Bootstrap's [media class](https://www.w3schools.com/Bootstrap/bootstrap_media_objects.asp) allowed me to get out of a CSS hole of my own making in horizontally aligning pictures and text in the press section. I then had an issue of not being able to get the h2 above them to stay above it, but [Bootstrap Shuffle](https://bootstrapshuffle.com/classes/sizing/w-100) provided the class I needed to solve that
-- In terms of look and feel, the site is similar across all browsers. The tablet and desktop views are almost identical, while devices always drop into col-12 formatting. There were a couple of fixes that were required to get this up and running across multiple devices and browsers, most notably the jsQuery issue above. There were also some issues around how the mailing list form in the footers was floating. The social media links in the footer also started to crunch around the 930px mark so I just upped the max-width on my tablet-specific CSS. The only outstanding issue I have is that in tablet view there is a significant amount of whitespace beneath the footer of the contact page, which looks to be due to the 
+- W3Schools' guide on Bootstrap's [media class](https://www.w3schools.com/Bootstrap/bootstrap_media_objects.asp) allowed me to get out of a CSS hole of my own making in horizontally aligning pictures and text in the press section. I then had an issue of not being able to get the h2 above them to stay above it, but [Bootstrap Shuffle](https://bootstrapshuffle.com/classes/sizing/w-100) provided the class I needed to solve that
+- In terms of look and feel, the site is similar across all browsers. The tablet and desktop views are almost identical, while devices always drop into col-12 formatting. There were a couple of fixes that were required to get this up and running across multiple devices and browsers, most notably the jsQuery issue above. There were also some issues around how the mailing list form in the footers was floating. The social media links in the footer also started to crunch around the 930px mark so I just upped the max-width on my tablet-specific CSS. 
+
+### Outstanding Issues
+
+- I've been unable to get around the Bootstrap grid system to have my five boxes perfectly aligned on the index page, the result being that on a desktop the welcome banner and the press banner are slightly wider than the three middle boxes;
+- In tablet view there is some whitespace beneath the footer of the contact page that I can't seem to get rid of;
+- The h2 elements on shows.html begin to overlap around 1000px if the word is too long (namely 'Manchester'), but is working fine once in tablet or mobile view.
+
 ### Cloning
 
-Clone: click green ‘Code’ button at the top of the repo and copy link, google the rest
+Assuming you already have Git [installed](https://git-scm.com/download/), anybody can clone this repository by opening Windows command prompt and using the command 'cd' followed by the directory you wish to store the repository in.
 
-- To do:
---- about: 
---- contact: whitespace underneath footer on ipad view
---- index: border match issues, press room align to left rather than centre, needs more uniform picture styling?
---- music: 
---- shop: 
---- shows: text overflow on tablet text;
---- site: 
+Go to the top of the [repository](https://github.com/kiehozero/weightbearer) and click the green Code drop-down button. Copy the [link](https://github.com/kiehozero/weightbearer.git) provided, then return to Command Prompt and type 'git clone' followed by the copied address.
 
+For an in-depth guide to cloning repositories, click [here](https://www.howtogeek.com/451360/how-to-clone-a-github-repository/).
 
 ## Deployment
 
 I used GitHub as the host for this project, and Gitpod to write it, using just one branch. I took part in the Code Institute hackathon while completing this project, learning a lot about the benefit of branches from the more experienced students in our time. In hindsight I would have used branches from the start of this project but I already had the major structure and feel of the site completed at that point.
 
 All of the images used on the website except for the logos for the external press links are hosted within the Gitpod repository. I had initially included mp3s on the music page so users could listen to the band directly within their browser, but my mentor advised me that this adds a large amount of content to the page for not much benefit, especially because I've linked to Spotify, YouTube and Bandcamp.
-
->>> In addition, if it is not obvious, you should also describe how to run your code locally. ADDING CLONING INFORMATION HERE
 
 
 ## Credits
