@@ -68,7 +68,6 @@ A wireframe for this project is included in the repository, with [desktop](https
 - [Pixlr](https://www.pixlr.com)
     - Pixlr is a great free software package that enabled me to quickly pick out hex colors and edit existing material that the band provided me with.
 
-- [W3 Validator]
 
 ## Testing
 
@@ -109,7 +108,7 @@ Clone: click green ‘Code’ button at the top of the repo and copy link, googl
 --- music: 
 --- shop: 
 --- shows: text overflow on tablet text;
---- site: mobile backgrounds too pixelated?
+--- site: mobile backgrounds too pixelated? e-mail input not floating right correctly on Chrome. Chrome issue re: jquery?
 
 
 ## Deployment

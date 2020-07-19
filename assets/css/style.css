@@ -593,7 +593,7 @@ a:hover {
     }
 
     .social-links {
-       word-spacing: 15px; /* fits links on single row */
+       word-spacing: 8px; /* fits links on single row */
     }
 
     .credits {
