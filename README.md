@@ -1,6 +1,6 @@
 # Weight Bearer
 
-![Weight Bearer Logo](/assets/images/text-stack.png)
+![Weight Bearer Logo](/assets/images/icons/text-stack.png)
 
 Welcome to my user-centric front-end development milestone project. For this project I chose to create a [website](https://kiehozero.github.io/weightbearer/) for a friend's band, Weight Bearer, a metal band based in Lancashire, England. Luckily for me the band actually wish to use this as their online home, so this project might technically count as my first (unpaid) commission!
  
