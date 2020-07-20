@@ -1,5 +1,7 @@
 # Weight Bearer
 
+![Weight Bearer Logo](/assets/images/text-stack.png)
+
 Welcome to my user-centric front-end development milestone project. For this project I chose to create a [website](https://kiehozero.github.io/weightbearer/) for a friend's band, Weight Bearer, a metal band based in Lancashire, England. Luckily for me the band actually wish to use this as their online home, so this project might technically count as my first (unpaid) commission!
  
 
@@ -21,13 +23,12 @@ I used the following hex colours, selecting using [Pixlr](https://www.pixlr.com)
 
 ### User Stories
 
-- LISTEN: Users who want to listen to the band's music can either listen using the mp3s on the Music page or re-direct to Spotify, Bandcamp or YouTube.
-
-- WATCH: User who want to see the band live can view the Shows page, which takes users to a Facebook event, ticket page and venue location for each show. The shows currently listed are dummies as shows are currently prohibited due to Covid-19 regulations.
-
-- PURCHASE: Users who wish to purchase band merchandise can visit the Shop page. This page is a dummy until I have completed the Javascript module.
-
-- CONTACT: Users who need to contact the band can complete the form contact form and specify their request, as well as their .
+1. As a first-time listener, I simply want to hear the band's music.
+2. I write a music blog and want to interview the band and give them some exposure to a wider audience.
+3. I'm a promoter booking shows for later this year, I want to check the band's availability.
+4. I love this band's music and I want to support the band by purchasing CD and a t-shirt.
+5. I want to buy tickets to a show and find out where the venue is.
+6. I really like the guitar sound this band uses, can I find out what gear they are using?
 
 
 ## Features
@@ -71,18 +72,20 @@ I used the following hex colours, selecting using [Pixlr](https://www.pixlr.com)
 
 ## Testing
 
->>> In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+### User Story Testing
 
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
-
-### User Stories
-
->>> 1. Contact form:
-    1. Go to the "Contact Us" page
-    2. Try to submit the empty form and verify that an error message about the required fields appears
-    3. Try to submit the form with an invalid email address and verify that a relevant error message appears
-    4. Try to submit the form with all inputs valid and verify that a success message appears.
-
+1. As a first-time listener, I simply want to hear the band's music.
+ - The Music page contains Spotify, YouTube and Bandcamp links to all of the band's releases.
+2. I write a music blog and want to interview the band and give them some exposure to a wider audience.
+ - Journalists and editors who wish to interview the band can complete the form on the Contact page.
+3. I'm a promoter booking shows for later this year, I want to check the band's availability.
+ - The Shows page contains all of the band's upcoming live events, to contact the band fill out the form on the Contact page.
+4. I love this band's music and I want to support the band by purchasing CD and a t-shirt.
+ - The Shop page contains a range of merchandise containing the band's logo and artwork.
+5. I want to buy tickets to a show and find out where the venue is.
+ - The Shows page contains links to Facebook events, ticketing websites and a Google Maps location pin for each venue.
+6. I really like the guitar sound this band uses, can I find out what gear they are using?
+ - The About section contains a short biography of each member plus any instruments and amplification that they are currently using.
 
 ### Bug Fixes
 
@@ -128,7 +131,8 @@ All of the images used on the website except for the logos for the external pres
 - Social media icons are provided by [Font Awesome](https://fontawesome.com/), while the fonts themselves come from [Google Fonts](https://fonts.google.com/).
 - Bootstrap's [navbar documentation](https://getbootstrap.com/docs/4.0/components/navbar/) helped me break down and customise the navigation classes they have;
 - As mentioned about, W3Schools' guide on Bootstrap's [media class](https://www.w3schools.com/Bootstrap/bootstrap_media_objects.asp) and [Bootstrap Shuffle](https://bootstrapshuffle.com/classes/sizing/w-100) helped me better understand element positioning;
-- [MakeAReadMe](https://www.makeareadme.com/) is an excellent resource for putting together a readme, although I largely used the [Code Institute readme template](https://github.com/Code-Institute-Solutions/readme-template).
+- [MakeAReadMe](https://www.makeareadme.com/) is an excellent resource for putting together a readme, although I largely used the [Code Institute readme template](https://github.com/Code-Institute-Solutions/readme-template);
+- The [Stormotion guide](https://www.stormotion.io/blog/how-to-write-a-good-user-story-with-examples-templates/) helped me put together the user stories I used for this project in a consistent format.
 
 ### Media
 - Photography and graphic designs were provided directly by the band, with the graphics being designed by [Secret Industries](https://www.instagram.com/secretindustries/).
