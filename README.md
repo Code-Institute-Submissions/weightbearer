@@ -56,25 +56,34 @@ Testing for each of the below user stories is included within the [testing log](
 ## Technologies Used
 
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)
+    - HTML is the language used to display and structure information on any website.
 
 - [CSS3](https://en.wikipedia.org/wiki/CSS3)
+    - Cascading Style Sheets is the language used to style HTML content.
 
 - [Bootstrap](https://getbootstrap.com/)
     - Bootstrap's grid framework helped me bring my initial wireframe ideas to life, while [Font Awesome](https://fontawesome.com/)'s icons and [Merriweather Sans](https://fonts.google.com/specimen/Merriweather+Sans) made things look that bit more professional.
 
-- [Gitpod](https://www.gitpod.io)
+- [Gitpod](https://www.gitpod.io/)
     - I'm not cocky enough to start using another editor so I've stuck with the trusty Gitpod!
 
-- [Balsamiq](https://www.balsamiq.com)
+- [Balsamiq](https://www.balsamiq.com/)
     - Balsamiq was recommended to me by my mentor Precious Ijege as a good drafting tool, and it took me very little time to get to grips with it. I will definitely be using this again in the future.
 
-- [Pixlr](https://www.pixlr.com)
+- [Pixlr](https://www.pixlr.com/)
     - Pixlr is a great free software package that enabled me to quickly pick out hex colors and edit existing material that the band provided me with.
 
 
 ## Testing
 
 I have included a [testing log](https://github.com/kiehozero/weightbearer/blob/master/TESTING.md) within the repository.
+
+
+## Deployment
+
+I used GitHub as the host for this project, and Gitpod to write it, using just one branch. I took part in the Code Institute hackathon while completing this project, learning a lot about the benefit of branches from the more experienced students in our team. In hindsight I would have used branches from the start of this project but I already had the major structure and feel of the site completed at that point.
+
+All of the images used on the website except for the logos for the external press links are hosted within the Gitpod repository. I had initially included mp3s on the music page so users could listen to the band directly within their browser, but my mentor advised me that this adds a large amount of content to the page for not much benefit, especially because I've linked to Spotify, YouTube and Bandcamp.
 
 ### Cloning
 
@@ -83,13 +92,6 @@ Assuming you already have Git [installed](https://git-scm.com/download/), anybod
 Go to the top of the [repository](https://github.com/kiehozero/weightbearer) and click the green Code drop-down button. Copy the [link](https://github.com/kiehozero/weightbearer.git) provided, then return to Command Prompt and type 'git clone' followed by the copied address.
 
 For an in-depth guide to cloning repositories, click [here](https://www.howtogeek.com/451360/how-to-clone-a-github-repository/).
-
-## Deployment
-
-I used GitHub as the host for this project, and Gitpod to write it, using just one branch. I took part in the Code Institute hackathon while completing this project, learning a lot about the benefit of branches from the more experienced students in our team. In hindsight I would have used branches from the start of this project but I already had the major structure and feel of the site completed at that point.
-
-All of the images used on the website except for the logos for the external press links are hosted within the Gitpod repository. I had initially included mp3s on the music page so users could listen to the band directly within their browser, but my mentor advised me that this adds a large amount of content to the page for not much benefit, especially because I've linked to Spotify, YouTube and Bandcamp.
-
 
 ## Credits
 
