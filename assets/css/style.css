@@ -38,7 +38,7 @@ body {
 /* Navigation */
 
 .navbar {
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.75);
     border: 0;
     height: 60px;
     justify-content: space-between;
