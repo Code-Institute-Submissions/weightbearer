@@ -7,13 +7,11 @@
         name="viewport"
         content="width=device-width, initial-scale=1.0">
     <title>Shop | Weight Bearer</title>
-    <!--This script is taken directly from the Whiskey Drop project and enables the drop-down menus to function.-->
     <script
         src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous">
     </script>
-    <!--This script is taken directly from the Whiskey Drop project and enables the drop-down menus to function.-->
     <link
         rel="stylesheet"
         href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -37,38 +35,61 @@
 <body>
 
     <header>
-
+        <!--NAVIGATION BAR-->
         <!--This navbar design is taken from the example contained in Boostrap's official navbar documentation-->
         <nav class="navbar navbar-dark navbar-expand-md">
+            <!--ICON TO GO BACK HOME-->
             <a href="index.html" class="navbar-brand">
                 <img src="./assets/images/icons/text-narrow-f2f2f2.png">
             </a>
 
+            <!--NAVIGATION DROP-DOWN (MOBILE ONLY)-->
             <button 
-                class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarShop" aria-controls="navbarShop" aria-expanded="false" aria-label="Toggle navigation">
-                <span><i class="fa fa-bars" aria-hidden="true"></i></span>
+                class="navbar-toggler ml-auto"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarShop"
+                aria-controls="navbarShop"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                    <!--Replaced default navbar-toggler icon with Font Awesome version,
+                    as per Stack Overflow solution in Bug Fixes section of TESTING.md-->
+                    <span><i class="fa fa-bars" aria-hidden="true"></i></span>
             </button>
 
+            <!--NAVIGATION LINKS-->
             <div class="collapse navbar-collapse" id="navbarShop">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a href="about.html" class="nav-link nav-link-light">About</a></li>
-                    <li class="nav-item"><a href="music.html" class="nav-link nav-link-light">Music</a></li>
-                    <li class="nav-item"><a href="shop.html" class="nav-link nav-link-light active">Shop</a></li>
-                    <li class="nav-item"><a href="shows.html" class="nav-link nav-link-light">Shows</a></li>
-                    <li class="nav-item"><a href="contact.html" class="nav-link nav-link-light">Contact</a></li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link nav-link-light">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="music.html" class="nav-link nav-link-light">Music</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="shop.html" class="nav-link nav-link-light active">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="shows.html" class="nav-link nav-link-light">Shows</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link nav-link-light">Contact</a>
+                    </li>
                 </ul>
             </div>
         </nav>
         <!--This navbar design is taken from the example contained in Bootstrap's official navbar documentation-->
 
-        <!--This is the main banner that heads each page-->
+        <!--BANNER-->
         <div class="container-fluid header-shop d-sm-block">
         </div>
     </header>
 
     <section>
+    <!--SHOP CONTAINER-->
         <div class="container-fluid" id="shop-container">
             <div class="row">
+                <!--SHOP ITEM: CD-->
                 <div class="col-md-4 col-sm-12 shop-box">
                     <img src="./assets/images/albumart/watch-the-collapse.jpg" alt="Watch the Collapse CD" class="shop-preview">
                     <h2>Album</h2>
@@ -82,6 +103,7 @@
                     <br>
                 </div>
 
+                <!--SHOP ITEM: T-SHIRT-->
                 <div class="col-md-4 col-sm-12 shop-box">
                     <img src="./assets/images/icons/diamond-grey.png" alt="Diamond T-Shirt" class="shop-preview">
                     <h2>T-Shirt</h2>
@@ -95,6 +117,7 @@
                     <br>
                 </div>
 
+                <!--SHOP ITEM: HOODIE-->
                 <div class="col-md-4 col-sm-12 shop-box">
                     <img src="./assets/images/icons/text-stack.png" alt="Hoodie" class="shop-preview">
                     <h2>Hoodie</h2>
@@ -108,6 +131,7 @@
                     <br>
                 </div>
 
+                <!--SHOP ITEM: KEYRING-->
                 <div class="col-md-4 col-sm-12 shop-box">
                     <img src="./assets/images/icons/diamond-orange.png" alt="Diamond Keyring" class="shop-preview">
                     <h2>Keyring</h2>
@@ -120,6 +144,7 @@
                     <br>
                 </div>
 
+                <!--SHOP ITEM: BADGE-->
                 <div class="col-md-4 col-sm-12 shop-box">
                     <img src="./assets/images/icons/diamond-purple.png" alt="Weight Bearer Pin Badge" class="shop-preview">
                     <h2>Pin Badge</h2>
@@ -132,6 +157,7 @@
                     <br>
                 </div>
 
+                <!--SHOP ITEM: STICKERS-->
                 <div class="col-md-4 col-sm-12 shop-box">
                     <img src="./assets/images/icons/diamond-gun.png" alt="Weight Bearer Sticker Pack" class="shop-preview">
                     <h2>Stickers</h2>
@@ -147,9 +173,11 @@
 		</div>
 	</section>
 
+    <!--FOOTER-->
     <footer class="container-fluid">
         <!--Footer shell taken from Code Institute resume mini-project.-->
         <div class="row footer">
+            <!--CREDITS-->
             <div class="col-sm-12 col-md-4">
                 <p class="credits">
 					All music copyright of Weight Bearer<br>
@@ -159,42 +187,50 @@
                     Web design by <a href="https://github.com/kiehozero" target="_blank">Stuart Saint</a><br>
                 </p>
             </div>
-
+            
+            <!--SOCIAL MEDIA LINKS-->
             <div class="col-sm-12 col-md-4">
                 <br>
                 <br>
                 <ul class="list-inline social-links">
                     <li class="list-inline-item">
-                        <a target="_blank"
-                            href="https://weightbeareruk.bandcamp.com/"><i class="fa fa-bandcamp" aria-hidden="true"></i>
+                        <a target="_blank" href="https://weightbeareruk.bandcamp.com/">
+                            <i class="fa fa-bandcamp" aria-hidden="true"></i>
                             <span class="sr-only">Bandcamp</span>
                         </a>
                     </li>
+
                     <li class="list-inline-item">
-                        <a target="_blank"
-                            href="https://www.facebook.com/weightbeareruk/"><i class="fa fa-facebook" aria-hidden="true"></i>
+                        <a target="_blank" href="https://www.facebook.com/weightbeareruk/">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
                             <span class="sr-only">Facebook</span>
                         </a>
                     </li>
+
                     <li class="list-inline-item">
-                        <a target="_blank"
-                            href="https://www.instagram.com/weightbeareruk/"><i class="fa fa-instagram" aria-hidden="true"></i>
+                        <a target="_blank" href="https://www.instagram.com/weightbeareruk/">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
                             <span class="sr-only">Instagram</span>
                         </a>
                     </li>
+
                     <li class="list-inline-item">
-                        <a target="_blank"
-							href="https://open.spotify.com/artist/2iRZazBajcalKZNJ6V76c3?si=rQNXA4McSFiqvHtAbdd9AA"><i class="fa fa-spotify" aria-hidden="true"></i><span class="sr-only">Spotify</span>
+                        <a target="_blank" href="https://open.spotify.com/artist/2iRZazBajcalKZNJ6V76c3?si=rQNXA4McSFiqvHtAbdd9AA">
+                            <i class="fa fa-spotify" aria-hidden="true"></i>
+                            <span class="sr-only">Spotify</span>
                         </a>
                     </li>
+
                     <li class="list-inline-item">
-						<a target="_blank"
-							href="https://www.youtube.com/channel/UCGLhymHMoSprgV_5CWtP05g"><i class="fa fa-youtube" aria-hidden="true"></i><span class="sr-only">YouTube</span>
+						<a target="_blank" href="https://www.youtube.com/channel/UCGLhymHMoSprgV_5CWtP05g">
+                            <i class="fa fa-youtube" aria-hidden="true"></i>
+                            <span class="sr-only">YouTube</span>
                         </a>
                     </li>
                 </ul>
             </div>
 
+            <!--MAILING LIST SIGN-UP-->
             <div class="col-sm-12 col-md-4">
                 <p class="inline-block">
                     <form class="mail-list-form">
