@@ -1,6 +1,6 @@
-## Testing
+# Testing
 
-### User Story Testing
+## User Story Testing
 
 1. As a first-time listener, I simply want to hear the band's music.
  - The Music page contains Spotify, YouTube and Bandcamp links to all of the band's releases.
@@ -15,7 +15,7 @@
 6. I really like the guitar sound this band uses, can I find out what gear they are using?
  - The About section contains a short biography of each member plus any instruments and amplification that they are currently using.
 
-### Bug Fixes
+## Bug Fixes
 
 Given that this is the first website I've built without the use of guidance, there were inevitably going to be plenty of bugs for me to wrestle with. I was surprised at how many I was able to fix simply by editing code on the fly and re-loading, but a few proved more frustrating and required a visit to W3Schools, Bootstrap Shuffle or Stack Overflow, links to which can be found in the credits section below.
 
@@ -38,7 +38,19 @@ Given that this is the first website I've built without the use of guidance, the
 
     In tablet view there is some whitespace beneath the footer of the contact page that I can't seem to get rid of.
 
-### Outstanding Issues
+## Outstanding Issues
 
 - I've been unable to get around the Bootstrap grid system to have my five boxes perfectly aligned on the index page, the result being that on a desktop the welcome banner and the press banner are slightly wider than the three middle boxes. I suspect this is because I've used a combination of custom percentage column widths and custom padding and margin widths;
 - The h2 elements on shows.html begin to overlap around 1000px if the word is too long (namely 'Manchester'), but is working fine once in tablet or mobile view.
+
+## Validation
+
+Each page was directly inputted into the [W3C Validator](https://validator.w3.org/) to check that the markup used passed W3C standards.
+
+### Issues raised
+
+- In validator testing it was found that I had combined multiple meta properties into a single tag, and that the name property had to come first in any tag it was used in. This has now been rectified on all pages.
+- In the header, the img in the navbar-brand anchor tag did not contain an alt property. This has now been rectified on all pages to read "Weight Bearer logo".
+- In the footer, I had used a paragraph element to sit around the mailing list form. This has now been replaced with a div element.
+
+### 
