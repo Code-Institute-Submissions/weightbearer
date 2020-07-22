@@ -31,8 +31,14 @@ Given that this is the first website I've built without the use of guidance, the
 - W3Schools' guide on Bootstrap's [media class](https://www.w3schools.com/Bootstrap/bootstrap_media_objects.asp) allowed me to get out of a CSS hole of my own making in horizontally aligning pictures and text in the press section. I then had an issue of not being able to get the h2 above them to stay above it, but [Bootstrap Shuffle](https://bootstrapshuffle.com/classes/sizing/w-100) provided the class I needed to solve that
 - In terms of look and feel, the site is similar across all browsers. The tablet and desktop views are almost identical, while mobile devices always drop into col-12 formatting. There were a couple of fixes that were required to get this up and running across multiple devices and browsers, most notably the jsQuery issue above. There were also some issues around how the mailing list form in the footers was floating. The social media links in the footer also started to crunch around the 930px mark so I just upped the max-width on my tablet-specific CSS. 
 
+    /* .nav-link.active appears to be a Bootstrap class that was causing me an immense amount of distress in getting
+    this navbar to style correctly. I realised there was no whitespace in the middle of the tag, then realised it is 
+    coloured using rgb, which is how I knew I hadn't written it (I've used hex for font colouring all the way 
+    through). I write this lengthy comment only to express my joy at finally solving this! */
+
+    In tablet view there is some whitespace beneath the footer of the contact page that I can't seem to get rid of.
+
 ### Outstanding Issues
 
 - I've been unable to get around the Bootstrap grid system to have my five boxes perfectly aligned on the index page, the result being that on a desktop the welcome banner and the press banner are slightly wider than the three middle boxes. I suspect this is because I've used a combination of custom percentage column widths and custom padding and margin widths;
-- In tablet view there is some whitespace beneath the footer of the contact page that I can't seem to get rid of;
 - The h2 elements on shows.html begin to overlap around 1000px if the word is too long (namely 'Manchester'), but is working fine once in tablet or mobile view.
