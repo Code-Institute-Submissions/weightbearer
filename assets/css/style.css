@@ -101,10 +101,7 @@ body {
 }
 
 .navbar-dark .navbar-nav .nav-link.active:hover {
-    /* .nav-link.active appears to be a Bootstrap class that was causing me an immense amount of distress in getting
-    this navbar to style correctly. I realised there was no whitespace in the middle of the tag, then realised it is 
-    coloured using rgb, which is how I knew I hadn't written it (I've used hex for font colouring all the way 
-    through). I write this lengthy comment only to express my joy at finally solving this! */
+    /* overrides .nav-link.active colouring (this is a Bootstrap class) */
     color: #693288;
 }
 
@@ -172,6 +169,8 @@ a:hover {
     display: inline-block;
 }
 
+/* Footer Credits */
+
 .credits {
     font-size: 12px;
     text-align: left;
@@ -181,6 +180,8 @@ a:hover {
     color: #f2f2f2;
     text-decoration: none;
 }
+
+/* Footer Mailing List */
 
 .mail-list-form {
     float: right;
@@ -192,6 +193,8 @@ a:hover {
     color: #f2f2f2;
     float: right;
 }
+
+/* Footer Social Media Links */
 
 .social-links {
     word-spacing: 20px;
@@ -213,7 +216,7 @@ a:hover {
 .music-box,
 .profile-box,
 .shop-box {
-    /* This ensures that there is a reasonable level of styling consistency across all content on the site */
+    /* Ensures there is consistency across all content on the site */
     background-color: #693288;
     color: #f2f2f2;
     margin: 5px;
@@ -333,6 +336,7 @@ a:hover {
 }
 
 .media {
+    /* overrides padding in this Bootstrap class */
     padding: 10px;
 }
 
@@ -375,30 +379,17 @@ a:hover {
     text-align: center;
 }
 
-.music-links-693288 li a i { /* links displayed on music.html */
+.music-links-693288 li a i { /* controls music links on music.html */
     font-size: 30px;
     color: #693288;
 }
 
-.music-links-f2f2f2 li a i { /* links displayed on index.html */
+.music-links-f2f2f2 li a i { /* controls music links on index.html */
     font-size: 30px;
     color: #f2f2f2;
 }
 
 /* Shop Text and Links */
-
-.checkout {
-    background-color: #f2f2f2;
-    padding-bottom: 20px;
-    padding-right: 80px;
-    padding-top: 20px;
-    text-align: right;
-}
-
-.fa-cart-arrow-down {
-    color: #693288;
-    font-size: 40px;
-}
 
 .shop-box h2,
 .shop-box h3 {
@@ -526,7 +517,7 @@ a:hover {
     }
 
     .credits {
-        margin-bottom: 5px; /* reduces all top and bottom footer margins on tablet view to take up as little space as possible */
+        margin-bottom: 5px;
         margin-top: 5px;
         font-size: 10px;
     }
@@ -550,8 +541,12 @@ a:hover {
     .header-music,
     .header-shop,
     .header-shows {
-        height: 90px; /* enables banner to sit behind navbar which is same height (see below) */
-    } 
+        height: 90px; /* enables banner to sit behind navbar which is same height */
+    }
+
+    .navbar {
+        height: 90px;
+    }
 
     .contact-box,
     .event-box,
@@ -562,19 +557,14 @@ a:hover {
         max-width: 90%;
     }
 
-    .navbar {
-        height: 90px;
-    }
-
     #navbarAbout,
     #navbarContact,
     #navbarIndex,
     #navbarMusic,
     #navbarShop,
     #navbarShows {
-        /* this overrides the transparent background-color of the navbar,
-        useless once it has to drop down over multiple colour selections */
-        background-color: #000000;
+        /* this overrides the transparent background-color of the navbar class */
+        background-color: rgba(0,0,0,0.75);
     }    
 
     .index-banner {
