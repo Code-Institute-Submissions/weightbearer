@@ -188,12 +188,14 @@ a:hover {
 .mail-list-form {
     float: right;
     text-align: right;
+    padding-right: 10px;
 }
 
 .mail-list-button {
     background-color: #693288;
     color: #f2f2f2;
     float: right;
+    text-align: center;
 }
 
 /* Footer Social Media Links */
@@ -481,6 +483,14 @@ a:hover {
     margin: 3px;
 }
 
+.contact-box .mail-list-form {
+    /* styles only the mailing list form on this page */
+    float: none;
+    text-align: center;
+    width: 60%;
+}
+
+
 .contact-box label {
     font-family: "Poppins";
 }
@@ -525,11 +535,8 @@ a:hover {
         font-size: 10px;
     }
 
-    .mail-list-button,
-    .mail-list-form {
+    .mail-list-form .mail-list-button {
         font-size: 10px;
-        margin: 5px;
-        text-align: right;
     }
 
     .event-box h2 {
@@ -591,6 +598,15 @@ a:hover {
         padding-top: 12px;
     }
 
+    .contact-box .mail-list-form {
+        /* makes e-mail input wider for smaller devices */
+        width: 80%;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
     .social-links {
        word-spacing: 8px; /* fits links on single row */
     }
@@ -604,7 +620,7 @@ a:hover {
 
     .mail-list-button,
     .mail-list-form {
-        float: none; /* removes right alignment from when footer is horizontally-aligned */
+        float: none; /* removes right alignment from when footer*/
         margin: 5px;
         text-align: center;
     }
