@@ -27,7 +27,7 @@ I used the following hex colours, selecting using [Pixlr](https://www.pixlr.com)
 
 Testing for each of the below user stories is included within the [testing log](https://github.com/kiehozero/weightbearer/blob/master/TESTING.md).
 
-1. As a first-time listener, I simply want to hear the band's music;
+1. As a first-time listener, I want to listen to the band's music;
 2. As a music writer, I want to learn about the band and expose them to a wider audience;
 3. As a promoter, I want to check the band's availability for shows that I am booking;
 4. As a long-time fan, I want to support the band by purchasing merchandise;

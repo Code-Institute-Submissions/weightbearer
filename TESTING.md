@@ -1,13 +1,6 @@
 # User Story Testing
 
-2. I write a music blog and want to interview the band and give them some exposure to a wider audience.
- - Journalists and editors who wish to interview the band can complete the form on the Contact page.
-3. I'm a promoter booking shows for later this year, I want to check the band's availability.
- - The Shows page contains all of the band's upcoming live events, to contact the band fill out the form on the Contact page.
-5. I want to buy tickets to a show and find out where the venue is.
- - The Shows page contains links to Facebook events, ticketing websites and a Google Maps location pin for each venue.
-
-__1. As a first-time listener, I want to listen to the band's music.__
+_1. As a first-time listener, I want to listen to the band's music._
  - **Option One**
    - Select the [Music](https://kiehozero.github.io/weightbearer/music.html) button on the navigation bar on any page;
    - On this page, each song is represented individually, and users can listen by click on the icon of their preferred streaming service.
@@ -16,31 +9,32 @@ __1. As a first-time listener, I want to listen to the band's music.__
    - Users can access the band's latest record by scrolling to the 'New Record Out Now!' post on the [home page](https://kiehozero.github.io/weightbearer/index.html);
    - Click on the icon of preferring streaming service.
 
-__2. As a music writer, I want to learn about the band and expose them to a wider audience.__
+_2. As a music writer, I want to learn about the band and expose them to a wider audience._
  - Select the [About](https://kiehozero.github.io/weightbearer/about.html) from the navigation bar of any page;
  - Scroll to view a brief history of the band and an short profile of each band member.
 
-__3. As a promoter, I want to check the band's availability for shows that I am booking.__
+_3. As a promoter, I want to check the band's availability for shows that I am booking._
  - Select the [Shows](https://kiehozero.github.io/weightbearer/shows.html) button on the navigation bar of any page;
  - Scroll to view the band's current itinerary;
  - Select the [Contact](https://kiehozero.github.io/weightbearer/contact.html) button on the navigation bar on any page;
  - Scroll to the 'Got a Question for Us?' heading and complete the contact form;
  - Select the 'promoter' query button and click the 'Submit' button.
 
-__4. As a long-time fan, I want to support the band by purchasing merchandise.__
+_4. As a long-time fan, I want to support the band by purchasing merchandise._
  - Click the [Shop](https://kiehozero.github.io/weightbearer/shop.html) button on the navigation bar of any page;
  - This page contains a range of merchandise.
  
-__5. As an event-goer, I want to buy tickets to a show and find out where the venue is.__
+_5. As an event-goer, I want to buy tickets to a show and find out where the venue is._
  - Select the [Shows](https://kiehozero.github.io/weightbearer/shows.html) button on the navigation bar of any page;
  - Scroll to view the band's current itinerary;
- - Click the ticket icon beneath each show to be re-directed to the relevant ticketing partner.
+ - Click the ticket icon beneath each show to be re-directed to the relevant ticketing partner;
+ - Click the map icon beneath each show to be re-directed to a Google Maps link for the venue.
  
-__6. As a musician, I want to find out what instruments the band are using.__
+_6. As a musician, I want to find out what instruments the band are using._
  - Click the [About](https://kiehozero.github.io/weightbearer/about.html) button on the navigation bar of any page;
  - Each member profile contains a brief overview of theirs instruments and/or amplification.
  
-__7. As a long-time fan, I want to keep in touch with the band by following them on social media.__
+_7. As a long-time fan, I want to keep in touch with the band by following them on social media._
  - **Option One**
    - Users can scroll to the bottom of any page to view links to the band's social media pages.
 
@@ -48,25 +42,24 @@ __7. As a long-time fan, I want to keep in touch with the band by following them
    - Click the [Contact](https://kiehozero.github.io/weightbearer/about.html) button on the navigation bar of any page;
    - Scroll down to the 'Want to Stay in Touch?' heading to view links to each of the band's social media pages.
  
-__8. As a long-time fan, I want to keep in touch with the band by subscribing to their mailing list.__
+_8. As a long-time fan, I want to keep in touch with the band by subscribing to their mailing list._
  - **Option One**
    - Scroll to the bottom-right of any page and enter an e-mail address in the form provided.
 
  - **Option Two**
    - Click the [Contact](https://kiehozero.github.io/weightbearer/about.html) button on the navigation bar of any page;
-   - Scroll down to the 'Subscribe to our newsletter!' heading and enter an e-mail address in the form provided.
+   - Scroll down to the 'Subscribe to our newsletter!' heading;
+   - Enter an e-mail address in the form provided.
  
- 
-__9. As a music writer, I want to contact the band regarding interviews.__
+_9. As a music writer, I want to contact the band regarding reviews or interviews._
  - Select the [Contact](https://kiehozero.github.io/weightbearer/contact.html) button on the navigation bar on any page;
  - Scroll to the 'Got a Question for Us?' heading and complete the contact form;
  - Select the 'press' query button and click the 'Submit' button.
  
-__10. As a label owner, I want to contact the band regarding releasing some of their material.__
- -
- -
-
-__11. As a band, we want a place that acts as our hub online.__
+_10. As a label owner, I want to contact the band regarding releasing some of their material._
+ - Select the [Contact](https://kiehozero.github.io/weightbearer/contact.html) button on the navigation bar on any page;
+ - Scroll to the 'Got a Question for Us?' heading and complete the contact form;
+ - Select the 'label' query button and click the 'Submit' button.
 
 # Bug Fixes
 
