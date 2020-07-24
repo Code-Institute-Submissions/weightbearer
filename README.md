@@ -21,16 +21,20 @@ I used the following hex colours, selecting using [Pixlr](https://www.pixlr.com)
 
 - For the lead font I chose Merriweather Sans as it most closely matched the font that the graphic designer commissioned by the band had used. This font only really worked in upper case, so I chose Poppins as a secondary font just for h3, p and span elements.
 
+- I have tried to keep a uniform template through the site in order to create a sense of familiarity when new users are navigating. Each page, across all devices, contains a navigation bar and an image banner in the header, and a footer with links to social media channels and a subscription form for their mailing list. I have removed this information from the footer on the Contact page as it features more prominently in the main content of that page.
+
 ### User Stories
 
 Testing for each of the below user stories is included within the [testing log](https://github.com/kiehozero/weightbearer/blob/master/TESTING.md).
 
-1. As a first-time listener, I simply want to hear the band's music.
-2. I write a music blog and want to interview the band and give them some exposure to a wider audience.
-3. I'm a promoter booking shows for later this year, I want to check the band's availability.
-4. I love this band's music and I want to support the band by purchasing CD and a t-shirt.
-5. I want to buy tickets to a show and find out where the venue is.
-6. I really like the guitar sound this band uses, can I find out what gear they are using?
+1. As a first-time listener, I simply want to hear the band's music;
+2. As a music writer, I want to learn about the band and expose them to a wider audience;
+3. As a promoter, I want to check the band's availability for shows that I am booking;
+4. As a long-time fan, I want to support the band by purchasing merchandisie;
+5. As an event-goer, I want to buy tickets to a show and find out where the venue is;
+6. As a musician, I want to find out what instruments the band are using;
+7. As a long-time fan, I want to keep in touch with the band by following them on social media;
+8. As a long-time fan, I want to keep in touch with the band by subscribing to their mailing list
 
 
 ## Features
