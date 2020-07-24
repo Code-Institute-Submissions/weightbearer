@@ -46,7 +46,7 @@ Given that this is the first website I've built without the use of guidance, the
 
 ## Validation
 
-Each page was directly inputted into the [W3C Validator](https://validator.w3.org/) to check that the markup used passed W3C standards.
+Each page was directly inputted into the [W3C HTML Validator](https://validator.w3.org/#validate_by_input) to check that the markup used passed W3C standards. The CSS style sheet was directly inputted into the [W3C CSS Validator](http://www.css-validator.org/#validate_by_input). The results can be seen below.
 
 ### Issues raised
 
@@ -54,4 +54,25 @@ Each page was directly inputted into the [W3C Validator](https://validator.w3.or
 - In the header, the img in the navbar-brand anchor tag did not contain an alt property. This has now been rectified on all pages to read "Weight Bearer logo".
 - In the footer, I had used a paragraph element to sit around the mailing list form. This has now been replaced with a div element.
 
-### 
+### Validation Proof
+
+- about.html
+![Contact page validation](/assets/images/validation/about-valid.PNG)
+
+- contact.html
+![Contact page validation](/assets/images/validation/contact-valid.PNG)
+
+- index.html
+![Contact page validation](/assets/images/validation/index-valid.PNG)
+
+- music.html
+![Contact page validation](/assets/images/validation/music-valid.PNG)
+
+- shop.html
+![Contact page validation](/assets/images/validation/shop-valid.PNG)
+
+- shows.html
+![Shows page validation](/assets/images/validation/shows-valid.PNG)
+
+- style.css
+![CSS page validation](#)
