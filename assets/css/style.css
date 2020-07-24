@@ -510,39 +510,6 @@ a:hover {
 
 /* Media Queries */
 
-@media (min-width: 576px) and (max-width: 940px) {/* alternate styling for tablet devices */
-    .header-index,
-    .header-about,
-    .header-contact,
-    .header-music,
-    .header-shop,
-    .header-shows {
-        height: 30vw;
-    } 
-
-    .navbar {
-        height: 90px; /* allows navbar to remain aligned once navbar-expand-md is active */
-    }
-
-    .social-links {
-       word-spacing: 4px; /* fits links on single row */
-    }
-
-    .credits {
-        margin-bottom: 5px;
-        margin-top: 5px;
-        font-size: 10px;
-    }
-
-    .mail-list-form .mail-list-button {
-        font-size: 10px;
-    }
-
-    .event-box h2 {
-        font-size: 20px;
-    }
-}
-
 @media (max-width: 575px) { /* alternate styling for mobile devices */
     .header-index,
     .header-about,
@@ -633,5 +600,38 @@ a:hover {
     .event-box h3,
     .event-link-row {
         text-align: center; /* center-align for mobile */
+    }
+}
+
+@media (min-width: 576px) and (max-width: 940px) {/* alternate styling for tablet devices */
+    .header-index,
+    .header-about,
+    .header-contact,
+    .header-music,
+    .header-shop,
+    .header-shows {
+        height: 30vw;
+    } 
+
+    .navbar {
+        height: 90px; /* allows navbar to remain aligned once navbar-expand-md is active */
+    }
+
+    .social-links {
+       word-spacing: 4px; /* fits links on single row */
+    }
+
+    .credits {
+        margin-bottom: 5px;
+        margin-top: 5px;
+        font-size: 10px;
+    }
+
+    .mail-list-form .mail-list-button {
+        font-size: 10px;
+    }
+
+    .event-box h2 {
+        font-size: 20px;
     }
 }
