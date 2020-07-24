@@ -43,20 +43,21 @@ Testing for each of the below user stories is included within the [testing log](
 
 ### Existing Features
 
-- Index - The landing page includes a short biography of the band, as well as prominent links to music, a shop and a diary of live events, in line with the main user stories;
-- Music - Contains links to each of the band's releases so far. I've included the album artwork for each as a thumbnail, which is inspired by the presentation style used by Spotify and Bandcamp, focusing primarily on individual songs;
+- Index - The landing page contains a welcome message and a couple of news items;
+- Music - Contains links and artwork for each of the band's releases so far. This is inspired by the presentation style used by Spotify and Bandcamp, focusing primarily on individual songs;
 - Shop - Contains the band's merchandise. These are currently in production so I've used dummy images for these;
-- Shows - Contains a diary of upcoming shows, with a dummy link to Facebook events as shows are obviously cancelled given current circumstances;
+- Shows - Contains a diary of upcoming shows, with live links to Google Maps and dummy links to Facebook events and ticketing websites;
 - About - A short history of the band, its members, and their instruments;
-- Contact - A basic form that allows people to send a message to the band, as well as selecting the reason for enquiry.
+- Contact - A basic form that allows people to send a message to the band, as well as selecting the reason for enquiry, plus a form to sign up to the mailing list and links to all social media channels.
 
 ### Features Left to Implement
 
-- I've included a dummy contact form and shop that will be live once I've completed the JavaScript module. I have no doubt that completing that module will throw up a million ideas for this project, but I'll be using this README as a guide of what to get started on.
-- A really frustrating part of this project was in the effect of borders and margins on Bootstrap grids. I actually took a few days off because I was making zero progress towards my goal, I had just lost all perspective and was in danger of stalling. Bootstrap is obviously a powerful and complex tool so I'd like to re-visit the main structure of the index page once I'm more comfortable with how things work.
+- I've included a dummy contact form and shop that will be live once I've completed the JavaScript module. Completing that module will throw up a million ideas for this project, but I'll be using this README as a guide of what to get started on.
+- As the project has progressed I have become more comfortable exploring Bootstrap classes so I'd like to re-visit the main structure of the index page;
+- I'd like to conduct a review of my CSS styling to see if there are further efficiencies I can make with a better understanding of Bootstrap.
 - My initial wireframe included a slightly more advanced grid system than I ultimately implemented, a grid of four windows and a separate side-column. I'd like to bring this in to save other content being hidden at the bottom of the page; ideally there would be no scrolling required on the home page unless being viewed on a mobile device.
-- I'd like to include a live Instagram feed at the side of the home page just to break up the content.
-- After lots of pain and suffering causing by overwriting Bootstrap classes with my own CSS and the myriad issues this brings up (see testing section!), I'd like to conduct a review of my CSS styling to see if there are further efficiencies I can make with a better understanding of Bootstrap.
+- I'd like to include a live Instagram feed at the side of the home page just to break up the content and push as much of the band's online presence into the website;
+- The user story for promoters at the moment involves having to view the itinerary and the contact form in separate pages, I would like to rectify this with another contact from beneath the list of shows;
 
 
 ## Technologies Used
@@ -68,7 +69,13 @@ Testing for each of the below user stories is included within the [testing log](
     - Cascading Style Sheets is the language used to style HTML content.
 
 - [Bootstrap](https://getbootstrap.com/)
-    - Bootstrap's grid framework helped me bring my initial wireframe ideas to life, while [Font Awesome](https://fontawesome.com/)'s icons and [Merriweather Sans](https://fonts.google.com/specimen/Merriweather+Sans) made things look that bit more professional.
+    - Bootstrap's grid framework helped me bring my initial wireframe ideas to life;
+    
+- [Font Awesome](https://fontawesome.com/)
+    - Font Awesome's free package provides a comprehensive icon suite that is fully customisable in CSS;
+    
+- [Google Fonts](https://fonts.google.com/)
+    - Google's free service provided countless fonts to help your project stand out;
 
 - [Gitpod](https://www.gitpod.io/)
     - I'm not cocky enough to start using another editor so I've stuck with the trusty Gitpod!
