@@ -84,13 +84,21 @@ Testing for each of the below user stories is included within the [testing log](
     - Balsamiq was recommended to me by my mentor Precious Ijege as a good drafting tool, and it took me very little time to get to grips with it. I will definitely be using this again in the future.
 
 - [Pixlr](https://www.pixlr.com/)
-    - Pixlr is a great free software package that enabled me to quickly pick out hex colors and edit existing material that the band provided me with.
+    - Pixlr is a great free software package that enabled me to quickly pick out hex colors and edit existing material that the band provided me with;
 
+- [Favicon.io](https://favicon.io/)
+    - A quick and easy tool to create favicons for display in the address bar.
 
 ## Testing
 
 I have included a [testing log](https://github.com/kiehozero/weightbearer/blob/master/TESTING.md) within the repository.
 
+In terms of look and feel, the site is similar across all browsers. The tablet and desktop views are almost identical, while mobile 
+devices always drop into col-12 formatting.
+
+I tested this project primarily on Firefox but also Chrome and Edge, taking advantage of the screen size options to test using iPad, 
+Samsung Galaxy and Kindle Fire. I also tested the site on my own Huawei device. In future I'll use Chrome as it flag up errors (see 
+jsQuery in the [testing log](https://github.com/kiehozero/weightbearer/blob/master/TESTING.md). 
 
 ## Deployment
 
@@ -106,9 +114,6 @@ I deployed this project to GitHub Pages using the following method:
  - If successful, a green box will appear beneath the heading with the link to your deployed page;
  - This page will only update with new content once that content has been pushed from your developer environment.
 
-All of the images used on the website except for the logos for the external press links are hosted within the Gitpod repository.
-
-I had initially included mp3s on the music page so users could listen to the band directly within their browser, but my mentor advised me that this adds a large amount of content to the page for not much benefit, especially because I've linked to Spotify, YouTube and Bandcamp.
 
 ### Cloning
 
