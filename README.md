@@ -30,11 +30,13 @@ Testing for each of the below user stories is included within the [testing log](
 1. As a first-time listener, I simply want to hear the band's music;
 2. As a music writer, I want to learn about the band and expose them to a wider audience;
 3. As a promoter, I want to check the band's availability for shows that I am booking;
-4. As a long-time fan, I want to support the band by purchasing merchandisie;
+4. As a long-time fan, I want to support the band by purchasing merchandise;
 5. As an event-goer, I want to buy tickets to a show and find out where the venue is;
 6. As a musician, I want to find out what instruments the band are using;
 7. As a long-time fan, I want to keep in touch with the band by following them on social media;
-8. As a long-time fan, I want to keep in touch with the band by subscribing to their mailing list
+8. As a long-time fan, I want to keep in touch with the band by subscribing to their mailing list;
+9. As a music writer, I want to contact the band regarding interviews;
+10. As a label owner, I want to contact the band regarding releasing some of their material.
 
 
 ## Features

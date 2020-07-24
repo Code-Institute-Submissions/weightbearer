@@ -1,17 +1,53 @@
 # User Story Testing
 
-1. As a first-time listener, I simply want to hear the band's music.
- - The Music page contains Spotify, YouTube and Bandcamp links to all of the band's releases.
+
 2. I write a music blog and want to interview the band and give them some exposure to a wider audience.
  - Journalists and editors who wish to interview the band can complete the form on the Contact page.
 3. I'm a promoter booking shows for later this year, I want to check the band's availability.
  - The Shows page contains all of the band's upcoming live events, to contact the band fill out the form on the Contact page.
-4. I love this band's music and I want to support the band by purchasing CD and a t-shirt.
- - The Shop page contains a range of merchandise containing the band's logo and artwork.
 5. I want to buy tickets to a show and find out where the venue is.
  - The Shows page contains links to Facebook events, ticketing websites and a Google Maps location pin for each venue.
 6. I really like the guitar sound this band uses, can I find out what gear they are using?
  - The About section contains a short biography of each member plus any instruments and amplification that they are currently using.
+
+1. As a first-time listener, I simply want to hear the band's music.
+ - Users can access the band's latest record by scrolling to the 'New Record Out Now!' post on the [home page](https://kiehozero.github.io/weightbearer/index.html) and clicking on the icon of their preferring streaming service;
+ - Users can select the [Music](https://kiehozero.github.io/weightbearer/music.html) button on the navigation bar to access all of the band's material. On this page, each song is represented individually, and users can listen by click on the icon of their preferred streaming service.
+
+2. As a music writer, I want to learn about the band and expose them to a wider audience.
+ - Users can read a short history of the band and individual biographies by selecting the [About](https://kiehozero.github.io/weightbearer/about.html) from the navigation bar.
+
+3. As a promoter, I want to check the band's availability for shows that I am booking.
+ -
+ -
+
+4. As a long-time fan, I want to support the band by purchasing merchandise.
+ - Users can scroll to the 'Weight Bearer Merch Update' post on the [home page](https://kiehozero.github.io/weightbearer/index.html) to be taken to the band's [Shop](https://kiehozero.github.io/weightbearer/shop.html);
+ - User can click the [Shop](https://kiehozero.github.io/weightbearer/shop.html) button on the navigation bar to visit the band's shop, which contains a range of merchandise.
+ 
+5. As an event-goer, I want to buy tickets to a show and find out where the venue is.
+ -
+ -
+ 
+6. As a musician, I want to find out what instruments the band are using.
+ - Users can navigate to the [About](https://kiehozero.github.io/weightbearer/about.html) page to read a brief overview of the band's instruments and amplification.
+ 
+7. As a long-time fan, I want to keep in touch with the band by following them on social media.
+ -
+ -
+ 
+8. As a long-time fan, I want to keep in touch with the band by subscribing to their mailing list.
+ -
+ -
+ 
+9. As a music writer, I want to contact the band regarding interviews.
+ -
+ -
+ 
+10. As a label owner, I want to contact the band regarding releasing some of their material.
+ -
+ -
+
 
 # Bug Fixes
 
@@ -37,10 +73,12 @@ Given that this is the first website I've built without the use of guidance, the
 
     In tablet view there is some whitespace beneath the footer of the contact page that I can't seem to get rid of.
 
+
 # Outstanding Issues
 
 - I've been unable to get around the Bootstrap grid system to have my five boxes perfectly aligned on the index page, the result being that on a desktop the welcome banner and the press banner are slightly wider than the three middle boxes. I suspect this is because I've used a combination of custom percentage column widths and custom padding and margin widths;
 - The h2 elements on shows.html begin to overlap around 1000px if the word is too long (namely 'Manchester'), but is working fine once in tablet or mobile view.
+
 
 # Validation
 
