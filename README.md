@@ -5,9 +5,9 @@
 Welcome to my user-centric front-end development milestone project. For this project I chose to create a [website](https://kiehozero.github.io/weightbearer/) for a friend's band, Weight Bearer, a metal band based in Lancashire, England. Luckily for me the band actually wish to use this as their online home, so this project might technically count as my first (unpaid) commission!
  
 
-## UX
+## User Experience
 
-I have created a website which centralises resources that would otherwise be spread across a number of social media websites. The band currently uses Bandcamp for hosting and selling music, Spotify and YouTube for streaming and Facebook for publicity and events.
+I have created a website that centralises resources that would otherwise be spread across a number of social media websites. The band currently uses Bandcamp for hosting and selling music, Spotify and YouTube for streaming and Facebook for publicity and events.
 
 ### Styling
 
@@ -96,23 +96,39 @@ I have included a [testing log](https://github.com/kiehozero/weightbearer/blob/m
 
 I used GitHub as the host for this project, and Gitpod to write it, using just one branch. I took part in the Code Institute hackathon while completing this project, learning a lot about the benefit of branches from the more experienced students in our team. In hindsight I would have used branches from the start of this project but I already had the major structure and feel of the site completed at that point.
 
-All of the images used on the website except for the logos for the external press links are hosted within the Gitpod repository. I had initially included mp3s on the music page so users could listen to the band directly within their browser, but my mentor advised me that this adds a large amount of content to the page for not much benefit, especially because I've linked to Spotify, YouTube and Bandcamp.
+I deployed this project to GitHub Pages using the following method:
+
+ - Locate the desired repository in your repository list and open it;
+ - Navigate to the Settings heading in the repository heading;
+ - Locate the GitHub Pages heading at the bottom of the page;
+ - Click the button beneath the Source sub-heading and change this from 'None' to 'Master Branch';
+ - Once the page reloads, locate the GitHub Pages heading again;
+ - If successful, a green box will appear beneath the heading with the link to your deployed page;
+ - This page will only update with new content once that content has been pushed from your developer environment.
+
+All of the images used on the website except for the logos for the external press links are hosted within the Gitpod repository.
+
+I had initially included mp3s on the music page so users could listen to the band directly within their browser, but my mentor advised me that this adds a large amount of content to the page for not much benefit, especially because I've linked to Spotify, YouTube and Bandcamp.
 
 ### Cloning
 
-Assuming you already have Git [installed](https://git-scm.com/download/), anybody can clone this repository by opening Windows command prompt and using the command 'cd' followed by the directory you wish to store the repository in.
+Assuming you already have Git [installed](https://git-scm.com/download/), anybody can clone this repository by following these steps:
 
-Go to the top of the [repository](https://github.com/kiehozero/weightbearer) and click the green Code drop-down button. Copy the [link](https://github.com/kiehozero/weightbearer.git) provided, then return to Command Prompt and type 'git clone' followed by the copied address.
+- Open the Windows command prompt on your machine;
+- Type the command 'cd' followed by the directory you wish to store the repository in;
+- Go to the top of the [GitHub repository](https://github.com/kiehozero/weightbearer) and click the green 'Code' drop-down button;
+- Copy the [link](https://github.com/kiehozero/weightbearer.git) provided;
+- Return to the Command Prompt and type 'git clone' followed by the copied address.
 
-For an in-depth guide to cloning repositories, click [here](https://www.howtogeek.com/451360/how-to-clone-a-github-repository/).
+For an in-depth guide to cloning repositories, click [here](https://www.howtogeek.com/451360/how-to-clone-a-github-repository/), from which my steps above were taken.
 
 ## Credits
 
 ### Content
-- The header and footer formats were borrowed from existing CI course content, namely the [Whiskey Drop](https://github.com/kiehozero/WhiskeyDrop) and [resume](https://github.com/kiehozero/resume) projects. The links are my own versions of each project but are more or less identical to the walkthrough.
-- Social media icons are provided by [Font Awesome](https://fontawesome.com/), while the fonts themselves come from [Google Fonts](https://fonts.google.com/).
+- The header and footer formats were borrowed from existing CI course content, namely the [Whiskey Drop](https://github.com/kiehozero/WhiskeyDrop) and [resume](https://github.com/kiehozero/resume) projects. The links are my own versions of each project but are more or less identical to the walkthrough;
+- Social media icons are provided by [Font Awesome](https://fontawesome.com/), while the fonts themselves come from [Google Fonts](https://fonts.google.com/);
 - Bootstrap's [navbar documentation](https://getbootstrap.com/docs/4.0/components/navbar/) helped me break down and customise the navigation classes they have;
-- Bootstrap's [grid documentation](https://getbootstrap.com/docs/4.0/layout/grid/#offsetting-columns) helpeed more than once when I needed to refresh my thinking, while the [offsetting section](https://getbootstrap.com/docs/4.0/layout/grid/#offsetting-columns) gave me the explanation I needed to re-work the Contact page footer.
+- Bootstrap's [grid documentation](https://getbootstrap.com/docs/4.0/layout/grid/#offsetting-columns) helpeed more than once when I needed to refresh my thinking, while the [offsetting section](https://getbootstrap.com/docs/4.0/layout/grid/#offsetting-columns) gave me the explanation I needed to re-work the Contact page footer;
 - W3Schools' guide on Bootstrap's [media class](https://www.w3schools.com/Bootstrap/bootstrap_media_objects.asp) and [Bootstrap Shuffle](https://bootstrapshuffle.com/classes/sizing/w-100) helped me better understand element positioning;
 - [MakeAReadMe](https://www.makeareadme.com/) is an excellent resource for putting together a readme, although I largely used the [Code Institute readme template](https://github.com/Code-Institute-Solutions/readme-template);
 - The [Stormotion guide](https://www.stormotion.io/blog/how-to-write-a-good-user-story-with-examples-templates/) helped me put together the user stories I used for this project in a consistent format.
