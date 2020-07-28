@@ -97,8 +97,7 @@ In terms of look and feel, the site is similar across all browsers. The tablet a
 devices always drop into col-12 formatting.
 
 I tested this project primarily on Firefox but also Chrome and Edge, taking advantage of the screen size options to test using iPad, 
-Samsung Galaxy and Kindle Fire. I also tested the site on my own Huawei device. In future I'll use Chrome as it flag up errors (see 
-jsQuery in the [testing log](https://github.com/kiehozero/weightbearer/blob/master/TESTING.md). 
+Samsung Galaxy and Kindle Fire. I also tested the site on my own Huawei device. 
 
 ## Deployment
 
