@@ -90,7 +90,9 @@ tablet-specific CSS.
 - [Bootstrap Creative](https://bootstrapcreative.com/how-to-center-a-div-horizontally-in-bootstrap-4/) provided the mx-auto Bootstrap 
 class as a quick fix to center-align divs.
 
-![Bugfixes](/assets/images/validation/bugfixes.PNG)
+![Rendering Status](/assets/images/validation/btest-render-status.PNG)
+
+![Bugfixes](/assets/images/validation/test-bug-fixes.PNG)
 
 ## Links and images
 
