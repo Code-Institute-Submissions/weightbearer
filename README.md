@@ -118,7 +118,7 @@ I deployed this project to GitHub Pages using the following method:
 
 Assuming you already have Git [installed](https://git-scm.com/download/), anybody can clone this repository by following these steps:
 
-- Open the Windows command prompt on your machine;
+- Open the command prompt/terminal on your machine;
 - Type the command 'cd' followed by the directory you wish to store the repository in;
 - Go to the top of the [GitHub repository](https://github.com/kiehozero/weightbearer) and click the green 'Code' drop-down button;
 - Copy the [link](https://github.com/kiehozero/weightbearer.git) provided;
